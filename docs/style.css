@@ -1,10 +1,6 @@
 /*General Styling*/
 
 body {
-    /*    background-image: url("images/casablancabogart-bergman.jpg");*/
-    /*    background-image: linear-gradient(transparent, tan 90%), url("images/casablancabogart-bergman.jpg");
-    background-size: cover;
-    background-attachment: fixed; */
     background-color: Bisque;
     font-family: "Courier New", monospace;
     font-size: 20px;
@@ -14,24 +10,32 @@ div.navBar {
     background-color: tan;
     font-size: 30px;
     opacity: 0.6;
+    /*    display: flex;
+    justify-content: left;*/
     /*    nav bar border*/
-/*    border-radius: 5px;
+    /*    border-radius: 5px;
     border-color: #bd8f79;
     border-style: solid;
     border-width: 5px;*/
 
-    /*    space around bar*/
+    /*    space around bar - try to remove completely?*/
     margin: 0px;
-    padding:0;
+    padding-top: 20px;
+    padding-bottom: 40px;
 
 }
 
 
 /*header formating
- * sample colors*/
+ * sample style*/
 h1 {
     color: #854c1d;
+    text-align: center;
     text-shadow: 3px 3.5px 4px #9c5821;
+}
+
+h2 {
+        color: #854c1d;
 }
 
 .header {
@@ -39,5 +43,4 @@ h1 {
 }
 
 .imgFormat {
-    
 }
