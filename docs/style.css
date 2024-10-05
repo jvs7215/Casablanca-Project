@@ -4,12 +4,17 @@ body {
     background-color: Bisque;
     font-family: "Courier New", monospace;
     font-size: 20px;
+
+    /*gets rid of default margin!*/
+    margin: 0;
 }
+
 
 div.navBar {
     background-color: tan;
     font-size: 30px;
     opacity: 0.6;
+
     /*    display: flex;
     justify-content: left;*/
     /*    nav bar border*/
@@ -18,13 +23,19 @@ div.navBar {
     border-style: solid;
     border-width: 5px;*/
 
-    /*    space around bar - try to remove completely?*/
-    margin: 0px;
+    /*space around text*/
     padding-top: 20px;
     padding-bottom: 40px;
-
+    padding-left: 20px;
 }
 
+/*readding default margin*/
+.spacing {
+    margin: 20px;
+}
+
+.p {
+}
 
 /*header formating
  * sample style*/
@@ -35,7 +46,8 @@ h1 {
 }
 
 h2 {
-        color: #854c1d;
+    margin: 20px;
+    color: #854c1d;
 }
 
 .header {
@@ -43,4 +55,16 @@ h2 {
 }
 
 .imgFormat {
+}
+
+
+.footer {
+    background-color: tan;
+    opacity: 0.6;
+
+    /*space around text*/
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
 }
