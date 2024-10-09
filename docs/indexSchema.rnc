@@ -1,5 +1,6 @@
 start = html
 html = element html {xmlns, head, body}
+# J - not sure why error - attribute must not be named "xmlns"; this is the only schema specific error left; most will be in the index.html
     xmlns = attribute xmlns {"http://www.w3.org/1999/xhtml"}
     head = element head {title, meta+, link}
         title = element title {text} 
@@ -17,6 +18,7 @@ html = element html {xmlns, head, body}
         h1 = element h1 {class, text}
         h2 = element h2 {class, text}
             class = attribute class {text}
+# J - p needs defined  more, I didn't add very much from the CC license
         p = element p {class+, mixed{(a+, p+, \div+, span+)*}}
             span = element span {property}
                 property = attribute property {"cc:attributionName"}
