@@ -1,3 +1,10 @@
-datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
-
-element test { xsd:double }
+start = xml
+xml = element xml {scene+}
+scene = element scene {n, (stageDescript, camera, sp, diag)+}
+    n = attribute n {xsd:int}
+    camera = element camera {text}
+    stageDescript = element stageDescript {text}
+    sp = element sp {(speaker, diag, stageDescript)*}
+        speaker = element speaker {who, text}
+            who = attribute who {text}
+        diag = element diag {text}
