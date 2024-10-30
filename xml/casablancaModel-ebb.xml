@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../docs/schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <!-- TEAM QUESTIONS: Should <camera> elements go in between <scene> elements or inside them?  -->
     <!-- TEAM: Name the elements in a way that makes the most sense for describing what's happening in the script. -->

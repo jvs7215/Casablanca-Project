@@ -447,3 +447,55 @@ The two walk off together into the night.
 FADE OUT.
 THE END
 
+<xml>
+    <!-- TEAM QUESTIONS: Should <camera> elements go in between <scene> elements or inside them? #Caleb: I think we should keep them wrapped in scene --> 
+    <scene n="1">
+        <camera>FADE IN: LONG SHOT — REVOLVING GLOBE</camera>
+        <stageDescript>As the globe revolves· it becomes animated -- Long lines of people (in miniature) stream trom all sections 01· Europe --to converge upon one point on tbe tip of Africa. 
+            OVER THIS animated scene comes a voice of a Narrator.</stageDescript>
+        
+        <sp>
+            <speaker who="narr">NARRATOR</speaker>     
+            <diag>Refugees -- streaming from all cor­ners of Europe towards the freedom of tbe New World -- all eyes turned toward Lisbon, tbe great embarkation point -- But now everybody could get to Lisbon directly -- so a Refugee Trail sprang up --</diag>  
+        </sp>
+        <camera>DISSOLVE TO:</camera>
+    </scene>  
+    <scene n="2">
+        <camera>ANIMATED MAP</camera>
+        <stageDescript>which illustrates tbe trail as the Narrator mentions the points.</stageDescript>
+        <sp>
+            <speaker who="narr">NARRATOR</speaker> 
+            <stageDescript>(continuing)</stageDescript>
+            <diag>Paris to Marseilles -- Across the Mediterranean to Oran -- Then by train -- or auto -- or foot -- across the rim of Africa to Casablanca in French Morocco --</diag>  
+            <camera>DISSOLVE TO:</camera>
+        </sp>
+        
+    </scene>
+    <scene n="3">
+        <camera>RELIEF MAP - OF CASA􀀢LANCA</camera>
+        <stageDescript>sbowing the ocean on one side and the desert on the other. Tbe voice of tbe Narrator COMES OVER.</stageDescript>
+        <sp>
+            <speaker who="narr">NARRATOR</speaker>
+            <diag>Here -- tbe fortunate ones through money -- or influence -- or luck -­obtain exit visas and scurry to Lisbon -- and from Lisbon to the Americas -- But the others -- wait in Casablanca -- and wait -- and wait --</diag>
+            <stageDescipt>As tbe Narrator's voice fades away --</stageDescipt>
+            <camera>CAMERA ZOOMS TO: </camera>
+        </sp>
+    </scene>
+    <scene n="4">
+        <camera>CLOSE SHOT - RELIEF MAP OF CASABLANCA </camera>
+        <stageDescript>A street on the map. </stageDescript>
+        <camera>DISSOLVE TO:</camera>
+    </scene>
+    <scene n="5">
+        <camera>FULL SHOT - GLASS SHOT - OLD MOORISH SECTION OF CITY - DAY</camera>
+        <stageDescript>At first only the turrets and rooftops are visible against a torrid sky. In tbe distance is a haze-enveloped sky. Tbe CAM.ERA PANS DOWN the facades of the 
+            Moorish buildings to a narrow, twisting street crowded witb the polyglot life of a native quarter. 
+            Tbe intense desert sun bolds tbe scene in a torpid tranquility. Act­ivity is unhurried and sounds are muted ... Suddenly the screech of a siren shatters the calm. 
+            Veiled women run screaming for shelter. Street vendors, beggars and urch--ins melt into doorways. 
+            A police car speeds into SHOT and pulls up before au old-fashioned Moorish hotel flop-house would be a better word for it.</stageDescript>
+        <camera>CUT TO:</camera>
+    </scene>
+    
+    
+    
+</xml>
