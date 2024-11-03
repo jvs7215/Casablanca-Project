@@ -1,6 +1,6 @@
 start = xml
 xml = element xml {scene+}
-scene = element scene {n, (stageDescript, camera, sp, diag)+}
+scene = element scene {n, mixed{(stageDescript, camera, sp, diag)}*}
     n = attribute n {xsd:int}
     camera = element camera {text}
     stageDescript = element stageDescript {text}
