@@ -1588,25 +1588,39 @@
             </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
-                <diag> A very nice idea.</diag></sp>
-            <sp><speaker who="mrl">MR. LEUCHTAG </speaker><note>raising his glass</note><diag> To
-                    America.</diag>
+                <diag> A very nice idea.</diag>
+            </sp>
+            <sp>
+                <speaker who="mrl">MR. LEUCHTAG </speaker>
+                <note>raising his glass</note>
+                <diag> To America.</diag>
             </sp>
             <dir>Mrs. Leuchtag and Carl repeat "To America." They clink glasses and drink.</dir>
-            <sp><speaker who="mrl">MR. LEUCHTAG</speaker>
-                <diag>Liebchen, uh, sweetness heart, what watch?</diag></sp><dir> She glances at her
-                    wristwatch.</dir> <sp><speaker who="mrsl">MRS. LEUCHTAG </speaker><diag>Ten watch.</diag></sp> <sp><speaker who="mrl">MR. LEUCHTAG</speaker> <descr>surprised</descr><diag> Such much?</diag></sp> <sp>
+            <sp>
+                <speaker who="mrl">MR. LEUCHTAG</speaker>
+                <diag>Liebchen, uh, sweetness heart, what watch?</diag>
+            </sp>
+            <dir> She glances at her wristwatch.</dir>
+            <sp>
+                <speaker who="mrsl">MRS. LEUCHTAG </speaker>
+                <diag>Ten watch.</diag>
+            </sp>
+            <sp>
+                <speaker who="mrl">MR. LEUCHTAG</speaker>
+                <descr>surprised</descr>
+                <diag> Such much?</diag>
+            </sp>
+            <sp>
                 <speaker who="carl">CARL</speaker>
                 <diag> Er, you will get along beautifully in America, huh. </diag>
             </sp>
-            <dir> Annina meets Renault in
-                the hallway as she leaves the gambling room,</dir>
+            <dir> Annina meets Renault in the hallway as she leaves the gambling room,</dir>
             <sp>
                 <speaker who="ren">RENAULT</speaker>
-                <diag> How's lady luck treating you? Aw, too bad. You'll find him over there.  </diag>
+                <diag> How's lady luck treating you? Aw, too bad. You'll find him over there.
+                </diag>
             </sp>
-            <dir>Annina
-                sees Rick and goes to his table.</dir>
+            <dir>Annina sees Rick and goes to his table.</dir>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
                 <diag> Monsieur Rick? </diag>
@@ -1630,7 +1644,8 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> <descr>cynically</descr> I should have known. </diag>
+                <diag>
+                    <descr>cynically</descr> I should have known. </diag>
             </sp>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
@@ -1648,7 +1663,7 @@
             </sp>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
-                <diag> No.  </diag>
+                <diag> No. </diag>
             </sp>
             <dir>Rick pours himself a drink</dir>
             <sp>
@@ -1693,7 +1708,8 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> <descr>wearily</descr> So you decided to go to America. </diag>
+                <diag>
+                    <descr>wearily</descr> So you decided to go to America. </diag>
             </sp>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
@@ -1735,15 +1751,16 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> He always has. There is a silence. Annina is very disturbed. </diag>
+                <diag> He always has.</diag>
             </sp>
+            <dir> There is a silence. Annina is very disturbed. </dir>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
                 <diag> Oh, Monsieur, you are a man. If someone loved you very much, so that your
                     happiness was the only thing that she wanted in the whole world, but she did a
-                    bad thing to make certain of it, could you forgive her? Rick stares off into
-                    space. </diag>
+                    bad thing to make certain of it, could you forgive her? </diag>
             </sp>
+            <dir>Rick stares off into space. </dir>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> Nobody ever loved me that much. </diag>
@@ -1755,7 +1772,8 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> harshly You want my advice? </diag>
+                <diag>
+                    <descr>harshly</descr> You want my advice? </diag>
             </sp>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
@@ -1774,18 +1792,19 @@
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> Yes, well, everybody in Casablanca has problems. Yours may work out. You'll
-                    excuse me. Rick abruptly rises. </diag>
+                    excuse me. </diag>
             </sp>
+            <dir>Rick abruptly rises. </dir>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
-                <diag> tonelessly Thank you, Monsieur. He quickly goes off, leaving Annina alone at
-                    the table. She remains seated, too demoralized to move. While Rick checks the
-                    reservation list, Ilsa and Laszlo enter the cafe. In the background we hear Sam
-                    playing, ironically enough, "It Had to Be You." Rick greets Ilsa and Laszlo.
-                </diag>
+                <diag>
+                    <descr>tonelessly</descr> Thank you, Monsieur.</diag>
             </sp>
-            <sp>
-                <speaker who="rick">RICK</speaker>
+            <dir>He quickly goes off, leaving Annina alone at the table. She remains seated, too
+                demoralized to move. While Rick checks the reservation list, Ilsa and Laszlo enter
+                the cafe. In the background we hear Sam playing, ironically enough, "It Had to Be
+                You." Rick greets Ilsa and Laszlo.</dir>
+            <sp>/ <speaker who="rick">RICK</speaker>
                 <diag> Good evening. </diag>
             </sp>
             <sp>
@@ -1794,12 +1813,14 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> I take that as a great compliment to Sam. to Ilsa I suppose he means to you
-                    Paris of, well, happier days. Laszlo looks around. </diag>
+                <diag> I take that as a great compliment to Sam. <note>to Ilsa</note> I suppose he
+                    means to you Paris of, well, happier days. </diag>
             </sp>
+            <dir>Laszlo looks around. </dir>
             <sp>
                 <speaker who="ilsa">ILSA</speaker>
-                <diag> quietly He does. Could we have a table close to him? </diag>
+                <diag>
+                    <descr>quietly</descr> He does. Could we have a table close to him? </diag>
             </sp>
             <sp>
                 <speaker who="las">LASZLO</speaker>
@@ -1807,94 +1828,105 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> Well, the geography may be a little difficult to arrange. Rick snaps his
-                    fingers for the headwaiter. </diag>
+                <diag> Well, the geography may be a little difficult to arrange.</diag>
             </sp>
+            <dir> Rick snaps his fingers for the headwaiter. </dir>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> Paul! Table thirty! </diag>
             </sp>
             <sp>
-                <speaker>HEADWAITER</speaker>
-                <diag> to Ilsa and Laszlo Yes, sir. Right this way, if you please. </diag>
+                <speaker who="hea">HEADWAITER</speaker>
+                <diag>
+                    <note>to Ilsa and Laszlo</note> Yes, sir. Right this way, if you please. </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> to Ilsa I'll have Sam play "As Time Goes By." I believe that's your favorite
-                    tune. </diag>
+                <diag><note> to Ilsa</note> I'll have Sam play "As Time Goes By." I believe that's
+                    your favorite tune. </diag>
             </sp>
             <sp>
                 <speaker who="ilsa">ILSA</speaker>
-                <diag> smiling Thank you. Rick walks over to Sam and whispers something to him. Sam
-                    stops what he is playing and begins "As Time Goes By." He shakes his head as
-                    Rick leaves. A waiter appears at Ilsa and Laszlo's table. </diag>
+                <diag>
+                    <descr>smiling</descr> Thank you. </diag>
             </sp>
             <sp>
                 <speaker who="las">LASZLO</speaker>
                 <diag> Two cognacs, please. </diag>
             </sp>
+            <dir>Rick walks over to Sam and whispers something to him. Sam stops what he is playing
+                and begins "As Time Goes By." He shakes his head as Rick leaves. A waiter appears at
+                Ilsa and Laszlo's table.</dir>
         </scene>
-        <scene>
+
+        <scene n="43">
             <camera>CUT TO:</camera>
             <setting>INT. RICK'S CAFE - GAMBLING ROOM - NIGHT Jan sits at the roulette table. He has
                 only three chips left and seems bewildered. As Rick comes up the croupier speaks to
                 Jan. </setting>
             <sp>
-                <speaker>CROUPIER</speaker>
+                <speaker who="cro">CROUPIER</speaker>
                 <diag> Do you wish to place another bet, sir? </diag>
             </sp>
             <sp>
                 <speaker who="jan">JAN</speaker>
-                <diag> No, no, I guess not. Rick stands behind Jan. </diag>
+                <diag> No, no, I guess not. </diag>
+            </sp>
+            <dir>Rick stands behind Jan.</dir>
+            <sp>
+                <speaker who="rick">RICK</speaker>
+                <diag>
+                    <note>to Jan</note> Have you tried twenty-two tonight? I said, twenty-two.
+                </diag>
+            </sp>
+            <dir>Jan looks at Rick, then at the chips in his hand. He pauses, then puts the chips on
+                twenty-two. Rick and the croupier exchange looks. The croupier understands what Rick
+                wants him to do. He spins the wheel. Carl follows the proceedings, fascinated. The
+                wheel stops spinning. </dir>
+            <sp>
+                <speaker who="cro">CROUPIER</speaker>
+                <diag>
+                    <note>in French</note> Twenty-two, black, twenty-two. A winner. Renault, at a
+                    nearby table, takes notice of what is happening. The croupier pushes a pile of
+                    chips onto twenty-two and Jan reaches for it. </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> to Jan Have you tried twenty-two tonight? I said, twenty-two. Jan looks at
-                    Rick, then at the chips in his hand. He pauses, then puts the chips on
-                    twenty-two. Rick and the croupier exchange looks. The croupier understands what
-                    Rick wants him to do. He spins the wheel. Carl follows the proceedings,
-                    fascinated. The wheel stops spinning. </diag>
+                <diag>
+                    <note>not even looking at Jan</note> Leave it there. Jan hesitates, then
+                    withdraws his hands. Carl continues to watch. The wheel spins. Nobody speaks
+                    while it spins. It stops. </diag>
             </sp>
             <sp>
-                <speaker>CROUPIER</speaker>
-                <diag> in French Twenty-two, black, twenty-two. A winner. Renault, at a nearby
-                    table, takes notice of what is happening. The croupier pushes a pile of chips
-                    onto twenty-two and Jan reaches for it. </diag>
-            </sp>
-            <sp>
-                <speaker who="rick">RICK</speaker>
-                <diag> not even looking at Jan Leave it there. Jan hesitates, then withdraws his
-                    hands. Carl continues to watch. The wheel spins. Nobody speaks while it spins.
-                    It stops. </diag>
-            </sp>
-            <sp>
-                <speaker>CROUPIER</speaker>
+                <speaker who="cro">CROUPIER</speaker>
                 <diag> Twenty-two, black. Another winner. The croupier shoves a pile of chips toward
                     Jan. </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> to Jan Cash it in and don't come back. Jan rises to go to the cashier. A
-                    CUSTOMER complains to Carl. </diag>
+                <diag>
+                    <note>to Jan</note> Cash it in and don't come back. </diag>
             </sp>
+            <dir>Jan rises to go to the cashier. A CUSTOMER complains to Carl.</dir>
             <sp>
-                <speaker>CUSTOMER</speaker>
+                <speaker who="cus">CUSTOMER</speaker>
                 <diag> Say, are you sure this place is honest? </diag>
             </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
-                <diag> fervently Honest! As honest as the day is long! Meanwhile, Rick has walked
-                    over to the croupier. </diag>
+                <diag>
+                    <descr>fervently</descr> Honest! As honest as the day is long! </diag>
             </sp>
+            <dir>Meanwhile, Rick has walked over to the croupier. </dir>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> How we doing tonight? </diag>
             </sp>
             <sp>
-                <speaker>CROUPIER</speaker>
-                <diag> Well, a couple of thousand less than I thought there would be. Rick smiles
-                    slightly and goes toward the door. Annina runs up to him and hugs him. </diag>
+                <speaker who="cro">CROUPIER</speaker>
+                <diag> Well, a couple of thousand less than I thought there would be.</diag>
             </sp>
+            <dir> Rick smiles slightly and goes toward the door. Annina runs up to him and hugs him. </dir>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
                 <diag> Monsieur Rick, I -- </diag>
@@ -1905,7 +1937,9 @@
             </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
-                <diag> solicitously Monsieur Rick, may I get you a cup of coffee? </diag>
+                <diag>
+                    <descr>solicitously</descr> Monsieur Rick, may I get you a cup of coffee?
+                </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
@@ -1913,9 +1947,10 @@
             </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
-                <diag> Monsieur Rick! Renault, seeing that Jan has won, gets up from his table to
-                    follow Rick. Jan and Annina stop him on the way. </diag>
+                <diag> Monsieur Rick! </diag>
             </sp>
+            <dir>Renault, seeing that Jan has won, gets up from his table to follow Rick. Jan and
+                Annina stop him on the way.</dir>
             <sp>
                 <speaker who="jan">JAN</speaker>
                 <diag> Captain Renault, may I -- </diag>
@@ -1932,8 +1967,9 @@
             <sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> I'll be there at ten. I am very happy for both of you. Still, it's very
-                    strange that you won. He looks over and sees Rick. </diag>
+                    strange that you won. </diag>
             </sp>
+            <dir>He looks over and sees Rick. </dir>
             <sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> Well, maybe not so strange. I'll see you in the morning. </diag>
@@ -1943,19 +1979,21 @@
                 <diag> Thank you so much, Captain Renault. </diag>
             </sp>
         </scene>
-        <scene>
+        <scene n="47">
             <camera>CUT TO:</camera>
             <setting>INT. RICK'S CAFE - MAIN ROOM - NIGHT At the bar, Carl whispers in Sacha's ear.
                 Sacha says "No!" and runs to Rick. </setting>
             <sp>
-                <speaker>SACHA</speaker>
-                <diag> Boss, you've done a beautiful thing. He kisses Rick on both cheeks. </diag>
+                <speaker who="sac">SACHA</speaker>
+                <diag> Boss, you've done a beautiful thing. </diag>
             </sp>
+            <dir>He kisses Rick on both cheeks.</dir>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> Go away, you crazy Russian! Carl pours a brandy for Rick. Pretending not to
-                    do so, Rick glances in Ilsa's direction. Renault comes up to him. </diag>
+                <diag> Go away, you crazy Russian!</diag>
             </sp>
+            <dir> Carl pours a brandy for Rick. Pretending not to do so, Rick glances in Ilsa's
+                direction. Renault comes up to him. </dir>
             <sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> As I suspected, you're a rank sentimentalist. </diag>
@@ -1966,7 +2004,8 @@
             </sp>
             <sp>
                 <speaker who="ren">RENAULT</speaker>
-                <diag> chidingly Why do you interfere with my little romances? </diag>
+                <diag>
+                    <descr>chidingly</descr> Why do you interfere with my little romances? </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
@@ -1974,10 +2013,12 @@
             </sp>
             <sp>
                 <speaker who="ren">RENAULT</speaker>
-                <diag> good-naturedly Well, I forgive you this time. But I'll be in tomorrow night
-                    with a breathtaking blonde, and it will make me very happy if she loses. Uh huh!
-                    He smiles and walks away. Laszlo comes up to Rick. </diag>
+                <diag>
+                    <descr>good-naturedly</descr> Well, I forgive you this time. But I'll be in
+                    tomorrow night with a breathtaking blonde, and it will make me very happy if she
+                    loses. Uh huh! </diag>
             </sp>
+            <dir> He smiles and walks away. Laszlo comes up to Rick. </dir>
             <sp>
                 <speaker who="las">LASZLO</speaker>
                 <diag> Monsieur Blaine, I wonder if I could talk to you? </diag>
