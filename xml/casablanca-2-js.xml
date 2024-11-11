@@ -2,7 +2,7 @@
 
 <!--<?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>-->
 <xml>
-    <metaData/>
+    <metadata/>
     <body>
         <scene n="22">
             <camera>CUT TO:</camera>
@@ -206,12 +206,12 @@
             <dir> Sam starts to play "As Time Goes By." Rick just stares ahead as orchestra MUSIC
                 slowly joins Sam's playing. </dir>
         </scene>
-        <montage><camera>DISSOLVE TO:</camera> MONTAGE - PARIS IN THE SPRING A) The Arc de Triomphe
+        <dir><camera>DISSOLVE TO:</camera> MONTAGE - PARIS IN THE SPRING A) The Arc de Triomphe
             from a distance. B) Rick drives a small, open car slowly along the boulevard. He puts
             his arm around Ilsa. The background scenery changes to a country road as she snuggles
             close to him and puts her head on his shoulder. C) An excursion boat on the Seine. Rick
             and Ilsa stand at the rail of the boat. They seem to be transported by each other as
-            Ilsa laughs. </montage>
+            Ilsa laughs. </dir>
         <scene n="25">
             <camera>CUT TO:</camera>
             <setting>INT. RICK'S PARIS APARTMENT - DAY Ilsa fixes flowers at the window while Rick
@@ -287,10 +287,10 @@
             </sp>
             <dir> They kiss passionately.</dir>
         </scene>
-        <montage><camera>CUT TO:</camera> MONTAGE - NEWSREEL FOOTAGE OF THE GERMAN OCCUPATION OF
+        <dir><camera>CUT TO:</camera> MONTAGE - NEWSREEL FOOTAGE OF THE GERMAN OCCUPATION OF
             FRANCE. A) The rubble of a burned-out, demolished building. A sign with an arrow points
             to Paris. B) German troops crossing a river. C) Tanks rolling down the road toward
-            Paris. D) German war planes overhead. </montage>
+            Paris. D) German war planes overhead. </dir>
         <scene n="29">
             <camera>CUT TO:</camera>
             <setting>EXT. PARIS CAFE - DAY A man sells newspapers to people crowded around him.
@@ -335,7 +335,7 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> You said it! <note>to Ilsa</note> Here's looking at you, kid. </diag>
+                <diag> You said it! <dir>to Ilsa</dir> Here's looking at you, kid. </diag>
             </sp>
             <setting>Suddenly a loudspeaker BLARES out something in German.</setting>
             <dir>Rick and Ilsa look at each other, then hurry to the window.</dir>
@@ -359,7 +359,7 @@
             </sp>
             <sp>
                 <speaker who="ilsa">ILSA</speaker>
-                <diag> Ten years ago? Let's see-- <note>pause as she thinks a bit</note> --Yes. I
+                <diag> Ten years ago? Let's see-- <dir>pause as she thinks a bit</dir> --Yes. I
                     was having a brace put on my teeth. Where were you? </diag>
             </sp>
             <sp>
@@ -433,7 +433,7 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> All right. At a quarter to five. <note>a thought strikes him</note> Say, why
+                <diag> All right. At a quarter to five. <dir>a thought strikes him</dir> Say, why
                     don't we get married in Marseilles?</diag>
             </sp>
             <dir> Rick chuckles again. </dir>
@@ -491,10 +491,10 @@
             </sp>
             <dir> Sam pulls an envelope from his pocket. Rick grabs it, opens it, and stares down at
                 the letter. </dir>
-            <insert>INSERT LETTER Richard, I cannot go with you or ever see you again. You must not
-                ask why. Just believe that I love you. Go, my darling, and God bless you. Ilsa </insert>
+            <dir>INSERT LETTER Richard, I cannot go with you or ever see you again. You must not
+                ask why. Just believe that I love you. Go, my darling, and God bless you. Ilsa </dir>
             <setting> Raindrops pour down the letter, smudging the writing. </setting>
-            <note>BACK TO SCENE</note>
+            <dir>BACK TO SCENE</dir>
             <setting> A whistle BLOWS. </setting>
             <sp>
                 <speaker who="sam">SAM</speaker>
@@ -652,7 +652,7 @@
             <sp>
                 <speaker who="off">OFFICER</speaker>
                 <diag>
-                    <note>to Jan and Annina</note> There's nothing we can do. </diag>
+                    <dir>to Jan and Annina</dir> There's nothing we can do. </diag>
             </sp>
         </scene>
         <scene n="37">
@@ -700,7 +700,7 @@
             <sp>
                 <speaker who="str">STRASSER</speaker>
                 <diag> Not at all. Captain Renault's signature is necessary on every exit visa.
-                        <note>turns to Renault</note> Captain, would you think it is possible that
+                        <dir>turns to Renault</dir> Captain, would you think it is possible that
                     Herr Laszlo will receive a visa? </diag>
             </sp>
             <sp>
@@ -941,7 +941,7 @@
             <dir> He hails a waiter. </dir>
             <sp>
                 <speaker who="fer">FERRARI</speaker>
-                <diag> The bourbon. <note>to Rick, sighing deeply</note> The news about Ugarte upset
+                <diag> The bourbon. <dir>to Rick, sighing deeply</dir> The news about Ugarte upset
                     me very much. </diag>
             </sp>
             <sp>
@@ -1164,7 +1164,7 @@
             <sp>
                 <speaker who="fer">FERRARI</speaker>
                 <diag>
-                    <note>to Ilsa</note> As leader of all illegal activities in Casablanca, I am an
+                    <dir>to Ilsa</dir> As leader of all illegal activities in Casablanca, I am an
                     influential and respected man. It would not be worth my life to do anything for
                     Monsieur Laszlo. You, however, are a different matter. </diag>
             </sp>
@@ -1253,8 +1253,8 @@
             </sp>
             <sp>
                 <speaker who="fer">FERRARI</speaker>
-                <diag> Well, good luck. But be careful. <note>a flick of his eyes in the direction
-                        of the bazaar</note> You know you're being shadowed? </diag>
+                <diag> Well, good luck. But be careful. <dir>a flick of his eyes in the direction
+                        of the bazaar</dir> You know you're being shadowed? </diag>
             </sp>
             <dir>Laszlo glances in the direction of the bazaar. </dir>
             <sp>
@@ -1390,8 +1390,8 @@
             <sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> Well, I told Strasser he wouldn't find the letters here. But I told my men to
-                    be especially destructive. You know how that impresses Germans?<note> taking a
-                        sip</note> Rick, have you got these letters of transit? </diag>
+                    be especially destructive. You know how that impresses Germans?<dir> taking a
+                        sip</dir> Rick, have you got these letters of transit? </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
@@ -1444,28 +1444,28 @@
             <sp>
                 <speaker who="foff">FRENCH OFFICER</speaker>
                 <diag>
-                    <note>in French</note> Say, you, you are not French to go with a German like
+                    <dir>in French</dir> Say, you, you are not French to go with a German like
                     this! </diag>
             </sp>
             <sp>
                 <speaker who="yvo">YVONNE</speaker>
                 <diag>
-                    <note>in French</note> What are you butting in for? </diag>
+                    <dir>in French</dir> What are you butting in for? </diag>
             </sp>
             <sp>
                 <speaker who="foff">FRENCH OFFICER</speaker>
                 <diag>
-                    <note>in French</note> I am butting in -- </diag>
+                    <dir>in French</dir> I am butting in -- </diag>
             </sp>
             <sp>
                 <speaker who="yvo">YVONNE</speaker>
                 <diag>
-                    <note>breaking in, in French </note>-- It's none of your business! </diag>
+                    <dir>breaking in, in French </dir>-- It's none of your business! </diag>
             </sp>
             <sp>
                 <speaker who="goff">GERMAN OFFICER</speaker>
                 <diag>
-                    <note>in French </note>No, no, no, no! One minute! <note>in English</note> What
+                    <dir>in French </dir>No, no, no, no! One minute! <dir>in English</dir> What
                     did you say? Would you kindly repeat it? </diag>
             </sp>
             <sp>
@@ -1479,20 +1479,20 @@
             <sp>
                 <speaker who="yvo">YVONNE</speaker>
                 <diag>
-                    <note>in French</note> Stop! I beg of you! I beg of you, stop! </diag>
+                    <dir>in French</dir> Stop! I beg of you! I beg of you, stop! </diag>
             </sp>
             <dir>There are exclamations from people nearby. German officers at a nearby table rise,
                 ready to join in. Rick walks up and separates the two men. </dir>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <note>to the German</note> I don't like disturbances in my place. Either lay off
+                    <dir>to the German</dir> I don't like disturbances in my place. Either lay off
                     politics or get out. </diag>
             </sp>
             <sp>
                 <speaker who="foff">FRENCH OFFICER</speaker>
                 <diag>
-                    <note>in French</note> Dirty Boche. Someday we'll have our revenge! </diag>
+                    <dir>in French</dir> Dirty Boche. Someday we'll have our revenge! </diag>
             </sp>
             <dir> Renault, Strasser and the other officers sit down again.</dir>
             <sp>
@@ -1550,7 +1550,7 @@
             <sp>
                 <speaker who="carl">CARL</speaker>
                 <diag>
-                    <note>in German</note> I brought you the finest brandy. Only the employees drink
+                    <dir>in German</dir> I brought you the finest brandy. Only the employees drink
                     it here.</diag>
             </sp>
             <dir> He pours a drink for each of them.</dir>
@@ -1561,7 +1561,7 @@
             <sp>
                 <speaker who="carl">CARL</speaker>
                 <diag>
-                    <note>as he pours</note> For Mrs. Leuchtag. </diag>
+                    <dir>as he pours</dir> For Mrs. Leuchtag. </diag>
             </sp>
             <sp><speaker who="mrsl">MRS. LEUCHTAG </speaker><diag>Thank you, Carl.</diag>a</sp>
             <sp>
@@ -1592,7 +1592,7 @@
             </sp>
             <sp>
                 <speaker who="mrl">MR. LEUCHTAG </speaker>
-                <note>raising his glass</note>
+                <dir>raising his glass</dir>
                 <diag> To America.</diag>
             </sp>
             <dir>Mrs. Leuchtag and Carl repeat "To America." They clink glasses and drink.</dir>
@@ -1813,7 +1813,7 @@
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag> I take that as a great compliment to Sam. <note>to Ilsa</note> I suppose he
+                <diag> I take that as a great compliment to Sam. <dir>to Ilsa</dir> I suppose he
                     means to you Paris of, well, happier days. </diag>
             </sp>
             <dir>Laszlo looks around. </dir>
@@ -1838,11 +1838,11 @@
             <sp>
                 <speaker who="hea">HEADWAITER</speaker>
                 <diag>
-                    <note>to Ilsa and Laszlo</note> Yes, sir. Right this way, if you please. </diag>
+                    <dir>to Ilsa and Laszlo</dir> Yes, sir. Right this way, if you please. </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
-                <diag><note> to Ilsa</note> I'll have Sam play "As Time Goes By." I believe that's
+                <diag><dir> to Ilsa</dir> I'll have Sam play "As Time Goes By." I believe that's
                     your favorite tune. </diag>
             </sp>
             <sp>
@@ -1859,7 +1859,7 @@
                 Ilsa and Laszlo's table.</dir>
         </scene>
 
-        <scene n="43">
+        <scene n="46">
             <camera>CUT TO:</camera>
             <setting>INT. RICK'S CAFE - GAMBLING ROOM - NIGHT Jan sits at the roulette table. He has
                 only three chips left and seems bewildered. As Rick comes up the croupier speaks to
@@ -1876,7 +1876,7 @@
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <note>to Jan</note> Have you tried twenty-two tonight? I said, twenty-two.
+                    <dir>to Jan</dir> Have you tried twenty-two tonight? I said, twenty-two.
                 </diag>
             </sp>
             <dir>Jan looks at Rick, then at the chips in his hand. He pauses, then puts the chips on
@@ -1886,14 +1886,14 @@
             <sp>
                 <speaker who="cro">CROUPIER</speaker>
                 <diag>
-                    <note>in French</note> Twenty-two, black, twenty-two. A winner. Renault, at a
+                    <dir>in French</dir> Twenty-two, black, twenty-two. A winner. Renault, at a
                     nearby table, takes notice of what is happening. The croupier pushes a pile of
                     chips onto twenty-two and Jan reaches for it. </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <note>not even looking at Jan</note> Leave it there. Jan hesitates, then
+                    <dir>not even looking at Jan</dir> Leave it there. Jan hesitates, then
                     withdraws his hands. Carl continues to watch. The wheel spins. Nobody speaks
                     while it spins. It stops. </diag>
             </sp>
@@ -1905,7 +1905,7 @@
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <note>to Jan</note> Cash it in and don't come back. </diag>
+                    <dir>to Jan</dir> Cash it in and don't come back. </diag>
             </sp>
             <dir>Jan rises to go to the cashier. A CUSTOMER complains to Carl.</dir>
             <sp>
