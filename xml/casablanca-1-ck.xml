@@ -6,32 +6,41 @@
 <xml>
     <scene n="1">
         <camera>FADE IN: LONG SHOT — REVOLVING GLOBE</camera>
-        <stageDescript>As the globe revolves· it becomes animated -- Long lines of people (in miniature) stream trom all sections 01· Europe --to converge upon one point on tbe tip of Africa. 
-            OVER THIS animated scene comes a voice of a Narrator.</stageDescript>
-        
+        <stageDescript>As the globe revolves· it becomes animated -- Long lines of people (in
+            miniature) stream trom all sections 01· Europe --to converge upon one point on tbe tip
+            of Africa. OVER THIS animated scene comes a voice of a Narrator.</stageDescript>
+
         <sp>
-            <speaker who="narr">NARRATOR</speaker>     
-            <diag>Refugees -- streaming from all cor­ners of Europe towards the freedom of tbe New World -- all eyes turned toward Lisbon, tbe great embarkation point -- But now everybody could get to Lisbon directly -- so a Refugee Trail sprang up --</diag>  
+            <speaker who="narr">NARRATOR</speaker>
+            <diag>Refugees -- streaming from all cor­ners of Europe towards the freedom of tbe New
+                World -- all eyes turned toward Lisbon, tbe great embarkation point -- But now
+                everybody could get to Lisbon directly -- so a Refugee Trail sprang up --</diag>
         </sp>
         <camera>DISSOLVE TO:</camera>
-    </scene>  
+    </scene>
     <scene n="2">
         <camera>ANIMATED MAP</camera>
-        <stageDescript>which illustrates tbe trail as the Narrator mentions the points.</stageDescript>
+        <stageDescript>which illustrates tbe trail as the Narrator mentions the
+            points.</stageDescript>
         <sp>
-            <speaker who="narr">NARRATOR</speaker> 
+            <speaker who="narr">NARRATOR</speaker>
             <stageDescript>(continuing)</stageDescript>
-            <diag>Paris to Marseilles -- Across the Mediterranean to Oran -- Then by train -- or auto -- or foot -- across the rim of Africa to Casablanca in French Morocco --</diag>  
+            <diag>Paris to Marseilles -- Across the Mediterranean to Oran -- Then by train -- or
+                auto -- or foot -- across the rim of Africa to Casablanca in French Morocco
+                --</diag>
             <camera>DISSOLVE TO:</camera>
         </sp>
-        
+
     </scene>
     <scene n="3">
         <camera>RELIEF MAP - OF CASA􀀢LANCA</camera>
-        <stageDescript>sbowing the ocean on one side and the desert on the other. Tbe voice of tbe Narrator COMES OVER.</stageDescript>
+        <stageDescript>sbowing the ocean on one side and the desert on the other. Tbe voice of tbe
+            Narrator COMES OVER.</stageDescript>
         <sp>
             <speaker who="narr">NARRATOR</speaker>
-            <diag>Here -- tbe fortunate ones through money -- or influence -- or luck -­obtain exit visas and scurry to Lisbon -- and from Lisbon to the Americas -- But the others -- wait in Casablanca -- and wait -- and wait --</diag>
+            <diag>Here -- tbe fortunate ones through money -- or influence -- or luck -­obtain exit
+                visas and scurry to Lisbon -- and from Lisbon to the Americas -- But the others --
+                wait in Casablanca -- and wait -- and wait --</diag>
             <stageDescipt>As tbe Narrator's voice fades away --</stageDescipt>
             <camera>CAMERA ZOOMS TO: </camera>
         </sp>
@@ -43,50 +52,36 @@
     </scene>
     <scene n="5">
         <camera>FULL SHOT - GLASS SHOT - OLD MOORISH SECTION OF CITY - DAY</camera>
-        <stageDescript>At first only the turrets and rooftops are visible against a torrid sky. In tbe distance is a haze-enveloped sky. Tbe CAM.ERA PANS DOWN the facades of the 
-            Moorish buildings to a narrow, twisting street crowded witb the polyglot life of a native quarter. 
-            Tbe intense desert sun bolds tbe scene in a torpid tranquility. Act­ivity is unhurried and sounds are muted ... Suddenly the screech of a siren shatters the calm. 
-            Veiled women run screaming for shelter. Street vendors, beggars and urch--ins melt into doorways. 
-            A police car speeds into SHOT and pulls up before au old-fashioned Moorish hotel flop-house would be a better word for it.</stageDescript>
+        <stageDescript>At first only the turrets and rooftops are visible against a torrid sky. In
+            tbe distance is a haze-enveloped sky. Tbe CAM.ERA PANS DOWN the facades of the Moorish
+            buildings to a narrow, twisting street crowded witb the polyglot life of a native
+            quarter. Tbe intense desert sun bolds tbe scene in a torpid tranquility. Act­ivity is
+            unhurried and sounds are muted ... Suddenly the screech of a siren shatters the calm.
+            Veiled women run screaming for shelter. Street vendors, beggars and urch--ins melt into
+            doorways. A police car speeds into SHOT and pulls up before au old-fashioned Moorish
+            hotel flop-house would be a better word for it.</stageDescript>
         <camera>CUT TO:</camera>
     </scene>
-
-<!--
-    
-        <scene><camera>FADE IN:</camera> INSERT - A revolving globe. When it stops revolving it turns
-        briefly into a contour map of Europe, then into a flat map. Superimposed over this map are
-        scenes of refugees fleeing from all sections of Europe by foot, wagon, auto, and boat, and
-        all converging upon one point on the tip of Africa -\- Casablanca. Arrows on the map
-        illustrate the routes taken as the voice of a NARRATOR describes the migration. NARRATOR
-        (V.O.) With the coming of the Second World War, many eyes in imprisoned Europe turned
-        hopefully, or desperately, toward the freedom of the Americas. Lisbon became the great
-        embarkation point. But not everybody could get to Lisbon directly, and so, a tortuous,
-        roundabout refugee trail sprang up. Paris to Marseilles, across the Mediterranean to Oran,
-        then by train, or auto, or foot, across the rim of Africa to Casablanca in French Morocco.
-        Here, the fortunate ones, through money, or influence, or luck, might obtain exit visas and
-        scurry to Lisbon, and from Lisbon to the New World. But the others wait in Casablanca -\- and
-        wait -\- and wait -\- and wait. The narrator's voice fade away... </scene>
-    <scene>
-        <camera>CUT TO:</camera>
-        <setting>EXT. OLD MOORISH SECTION OF THE CITY - DAY At first only the turrets and rooftops
-            are visible against a torrid sky. The facades of the Moorish buildings give way to a
-            narrow, twisting street crowded with the polyglot life of a native quarter. The intense
-            desert sun holds the scene in a torpid tranquility. Activity is unhurried and sounds are
-            muted. </setting>
-    </scene>
-    <scene>
-        <camera>CUT TO:</camera>
+    <scene n="6">
         <setting>INT. POLICE STATION - DAY A POLICE OFFICER takes a piece of paper from the
             typewriter, turns to a microphone, and reads. </setting>
         <sp>
-            <speaker>POLICE OFFICER</speaker>
-            <diag> To all officers! Two German couriers carrying important official documents
-                murdered on train from Oran. Murderer and possible accomplices headed for
-                Casablanca. Round up all suspicious characters and search them for stolen documents.
-                Important! </diag>
+            <speaker>NARRATOR</speaker>
+            <diag> of this decrepit hotel. Native French police officers run up the steps,
+                crash into the doors of the various rooms,
+                come out -- dragging frightened refugees.</diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="7">
+        <setting>CLOSE SHOT - DOOR</setting>
+        <sp>
+            <speaker>NARRATOR</speaker>
+            <diag>as one police officer flings it open.
+                The shadow of a man hanging by a rope from a chandelier is seen on the wall. 
+                The officer slams the door shut.</diag>
+        </sp>
+    </scene>
+    <scene n="8">
         <camera>CUT TO:</camera>
         <setting>EXT. A STREET IN THE OLD MOORISH SECTION - DAY An officer BLOWS his whistle several
             times. There is pandemonium as native guards begin to round up people. A police car,
@@ -124,14 +119,14 @@
                 Free French literature. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="9">
         <camera>CUT TO:</camera>
         <setting>EXT. PALAIS DE JUSTICE - DAY We see an inscription carved in a marble block along
             the roofline of the building: "Liberte, Egalite, Fraternite" We see the the facade,
             French in architecture, then the high-vaulted entrance which is inscribed "Palais de
             Justice". At the entrance the arrested suspects are led in by the police. </setting>
     </scene>
-    <scene>
+    <scene n="10">
         <camera>CUT TO:</camera>
         <setting>EXT. SIDEWALK CAFE - DAY A middle-aged ENGLISH COUPLE sit at a table just off the
             square, and observe the commotion across the way in front of the Palais de Justice. The
@@ -166,7 +161,7 @@
         <setting>EXT. PALAIS DE JUSTICE - DAY Suspects are herded out of the van, and into the
             Palais de Justice. </setting>
     </scene>
-    <scene>
+    <scene n="11">
         <camera>CUT TO:</camera>
         <setting>EXT. SIDEWALK CAFE - DAY </setting>
         <sp>
@@ -216,7 +211,7 @@
                 flying airplane. They look up. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="12">
         <camera>CUT TO:</camera>
         <setting>EXT. OVERHEAD SHOT - DAY An airplane cuts its motor for landing. </setting>
     </scene>
@@ -231,12 +226,12 @@
             <diag> wistfully Perhaps tomorrow we'll be on that plane. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="13">
         <camera>CUT TO:</camera>
         <setting>EXT. OVERHEAD SHOT - DAY The plane SWOOPS down past a sign atop a building at the
             edge of the airport. The sign reads "Rick's Cafe Americain." </setting>
     </scene>
-    <scene>
+    <scene n="14">
         <camera>CUT TO:</camera>
         <setting>EXT. AIRFIELD - DAY As the plane lands a swastika on its tail is clearly visible.
             It taxis to a stop as a group of officers march into formation in front of it. Behind
@@ -334,13 +329,13 @@
             <diag> I have already heard about this cafe, and also about Mr. Rick himself. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="15">
         <camera>DISSOLVE TO:</camera>
         <setting>EXT. RICK'S CAFE - NIGHT The neon sign above the door is brightly lit. Customers
             arrive and go in through the front door. From inside we hear sounds of MUSIC and
             LAUGHTER. The song is "It Had to Be You." Again we isolate on the neon sign. </setting>
     </scene>
-    <scene><camera>INSERT SIGN:</camera> "Rick's Cafe Americain". We follow a group of customers
+    <scene n="16"><camera>INSERT SIGN:</camera> "Rick's Cafe Americain". We follow a group of customers
         inside. <setting>INT. RICK'S CAFE - MAIN ROOM - NIGHT Rick's is an expensive and chic
             nightclub which definitely possesses an air of sophistication and intrigue. SAM, a
             middle-aged Negro, sits on a stool before a small, salmon-colored piano on wheels,
@@ -431,8 +426,8 @@
             </diag></sp>
         <sp><speaker>UGARTE</speaker><diag> vaguely Oh, nothing. But when you first came to
                 Casablanca, I thought -\- </diag></sp>
-        <sp><speaker>RICK</speaker><diag> coldly -\- You thought what? Fearing to offend Rick, Ugarte
-                laughs. </diag></sp>
+        <sp><speaker>RICK</speaker><diag> coldly -\- You thought what? Fearing to offend Rick,
+                Ugarte laughs. </diag></sp>
         <sp><speaker>UGARTE</speaker><diag> What right do I have to think? Ugarte pulls out a chair
                 at Rick's table. </diag></sp>
         <sp><speaker>UGARTE</speaker><diag> May I? Too bad about those two German couriers, wasn't
@@ -495,7 +490,7 @@
         <sp><speaker>RICK</speaker><diag> slowly Yes, you're right, Ugarte. I am a little more
                 impressed with you. Rick leaves the gambling room and goes into the main room.
             </diag></sp></scene>
-    <scene>
+    <scene n="17">
         <camera>CUT TO:</camera>
         <setting>INT. RICK'S CAFE - MAIN ROOM - NIGHT Rick makes his way over to Sam, who plays and
             sings the "Knock Wood" number, accompanied by the orchestra. The cafe is in
@@ -660,7 +655,7 @@
             <diag> No. You're going home. You've had a little too much to drink. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="18">
         <camera>CUT TO:</camera>
         <setting>EXT. RICK'S CAFE - NIGHT Sacha stands at the curb on the street in front of Rick's
             and signals for a cab. </setting>
@@ -787,7 +782,7 @@
             <diag> I'm awfully sorry. The three men enter the cafe. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="19">
         <camera>CUT TO:</camera>
         <setting>INT. RICK'S CAFE - MAIN ROOM - NIGHT They pass Sam at the piano. He's playing "Baby
             Face". Rick pats Sam on the shoulder. </setting>
@@ -1045,7 +1040,7 @@
             <diag> hurriedly Excuse me. He hurries away. Rick smiles cynically. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="20">
         <camera>CUT TO:</camera>
         <setting>INT. RICK'S CAFE - MAIN ROOM - NIGHT Renault walks up to Carl. </setting>
         <sp>
@@ -1113,7 +1108,7 @@
             <diag> I expected no less, Captain. </diag>
         </sp>
     </scene>
-    <scene>
+    <scene n="21">
         <camera>CUT TO:</camera>
         <setting>INT. RICK'S CAFE - GAMBLING ROOM - NIGHT Ugarte stands at the roulette table. Two
             gendarmes approach him from behind. </setting>
@@ -1807,7 +1802,7 @@
             <diag> evading I don't know. I ain't seen him all night. Sam looks very uncomfortable.
             </diag>
         </sp>
-        
+
         <sp>
             <speaker>ILSA</speaker>
             <diag> When will he be back? </diag>
@@ -1822,8 +1817,8 @@
         </sp>
         <sp>
             <speaker>SAM</speaker>
-            <diag> Oh, he never-\- well-\- desperately he's got a girl up at the Blue Parrot. He goes
-                up there all the time. </diag>
+            <diag> Oh, he never-\- well-\- desperately he's got a girl up at the Blue Parrot. He
+                goes up there all the time. </diag>
         </sp>
         <sp>
             <speaker>ILSA</speaker>
@@ -2070,6 +2065,6 @@
                 the door as Rick sits down again and stares off in their direction. </diag>
         </sp>
     </scene>
--->
-    
+
+
 </xml>
