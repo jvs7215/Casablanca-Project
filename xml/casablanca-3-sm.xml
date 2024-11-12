@@ -19,26 +19,26 @@
                 <diag> No, no, I guess not.</diag>
                 Rick stands behind Jan. 
             </sp></dir>
-            <sp>
+            <dir><sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> <dir>to Jan</dir> Have you tried twenty-two tonight? I said, twenty-two. </diag>
-                <dir>Jan looks at Rick, then at the chips in his hand. He pauses, then puts the
+                Jan looks at Rick, then at the chips in his hand. He pauses, then puts the
                     chips on twenty-two. Rick and the croupier exchange looks. The croupier
                     understands what Rick wants him to do. He spins the wheel. Carl follows the
-                    proceedings, fascinated. The wheel stops spinning.</dir>
-            </sp>
+                    proceedings, fascinated. The wheel stops spinning.
+            </sp></dir>
             <dir><sp>
                 <speaker who="cro">CROUPIER</speaker>
                 <diag><dir> in French</dir> Twenty-two, black, twenty-two. </diag>
                 A winner. Renault, at a nearby table, takes notice of what is happening. The
-                    croupier pushes a pile of chips onto twenty-two and Jan reaches for it.</dir>
-            </sp>
+                    croupier pushes a pile of chips onto twenty-two and Jan reaches for it.
+            </sp></dir>
             <dir><sp>
                 <speaker who="rick">RICK</speaker>
                 not even looking at Jan
                 <diag>Leave it there.</diag>
-                <dir>Jan hesitates, then withdraws his hands. Carl continues to watch. The wheel
-                    spins. Nobody speaks while it spins. It stops.</dir>
+                Jan hesitates, then withdraws his hands. Carl continues to watch. The wheel
+                    spins. Nobody speaks while it spins. It stops.
             </sp></dir>
             <dir><sp>
                 <speaker who="cro">CROUPIER</speaker>
@@ -68,8 +68,8 @@
                 <speaker who="cro">CROUPIER</speaker>
                 <diag> Well, a couple of thousand less than I thought there would be. </diag>
                 Rick smiles slightly and goes toward the door. Annina runs up to him and hugs
-                    him. </dir>
-            </sp>
+                    him. 
+            </sp></dir>
             <sp>
                 <speaker who="ann">ANNINA</speaker>
                 <diag> Monsieur Rick, I -- </diag>
