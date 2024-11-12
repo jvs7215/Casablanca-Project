@@ -21,7 +21,7 @@
         </rule>
         
         <rule context="scene">
-            <assert test="stageDescript">
+            <assert test="dir">
                 The scene may contain a stageDescript element.
             </assert>
         </rule>

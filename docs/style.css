@@ -14,6 +14,7 @@ div.navBar {
     background-color: tan;
     font-size: 30px;
     opacity: 0.6;
+    justify-content: center;
 
     /*    display: flex;
     justify-content: left;*/
@@ -34,6 +35,39 @@ div.navBar {
     margin: 20px;
 }
 
+.image-spacing{
+    margin-top: 100px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.7); /* semi transparent colored border for aesthetic */
+    padding: 10px;
+    border-radius: 8px; /* rounded borders */
+    display: inline-block; /* box adjusts with text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adds a shadowy effect ***REMINDER*** add to all other inserted images for noir theme */
+}
+
+.image-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+}
+
+.container{
+    display: flex; /* Adding flex property for sizing */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pdf-embed {
+    width: 80%;
+    height: 80%;
+}
+
 .p {
 }
 
@@ -46,9 +80,13 @@ h1 {
 }
 
 h2 {
+
     margin: 20px;
     color: #854c1d;
 }
+
+
+
 
 .header {
 
