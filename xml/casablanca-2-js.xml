@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--<?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>-->
+<?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <metadata/>
     <body>
@@ -1563,7 +1562,7 @@
                 <diag>
                     <dir>as he pours</dir> For Mrs. Leuchtag. </diag>
             </sp>
-            <sp><speaker who="mrsl">MRS. LEUCHTAG </speaker><diag>Thank you, Carl.</diag>a</sp>
+            <sp><speaker who="mrsl">MRS. LEUCHTAG </speaker><diag>Thank you, Carl.</diag></sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
                 <diag> For Mr. Leuchtag. <setting>MR. LEUCHTAG Carl, sit down. Have a brandy with
@@ -1577,7 +1576,7 @@
             </sp>
             <dir>He produces a glass from a back pocket. </dir>
             <sp><speaker who="mrsl">MRS. LEUCHTAG</speaker>
-                <diag>At last the day has came</diag>. </sp>
+                <diag>At last the day has come.</diag></sp>
             <sp>
                 <speaker who="mrl">MR. LEUCHTAG</speaker>
                 <diag> Frau Leuchtag and I are speaking nothing but English now.</diag>
@@ -1804,7 +1803,7 @@
                 demoralized to move. While Rick checks the reservation list, Ilsa and Laszlo enter
                 the cafe. In the background we hear Sam playing, ironically enough, "It Had to Be
                 You." Rick greets Ilsa and Laszlo.</dir>
-            <sp>/ <speaker who="rick">RICK</speaker>
+            <sp><speaker who="rick">RICK</speaker>
                 <diag> Good evening. </diag>
             </sp>
             <sp>

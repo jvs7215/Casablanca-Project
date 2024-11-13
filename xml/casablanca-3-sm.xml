@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!--<?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>-->
+<?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <metadata> </metadata>
     <body>
@@ -270,7 +269,7 @@
             <sp>
                 <speaker who="las">LASZLO</speaker>
                 <diag> My wife?</diag>
-                <dir>Laszlo looks at him, puzzled. </dir>] </sp>
+                <dir>Laszlo looks at him, puzzled. </dir> </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> Yes. </diag>
@@ -963,6 +962,7 @@
                 Ilsa stands just in back of him. She makes a move as if to go out to the balcony but
                 Rick's pushes her back. She withdraws behind the door. Rick walks out to the balcony
                 railing. </setting>
+        </scene>
             <scene n="62">
                 <setting>INT. RICK'S CAFE - BALCONY - MAIN ROOM - NIGHT Rick sees Carl attending to
                     Laszlo, who appears to be injured. </setting>
@@ -971,7 +971,10 @@
                     <diag> Carl, what happened? </diag>
                     <dir>Both Carl and Laszlo look up. </dir>
                 </sp>
-            </scene>
+           <!--  </scene>
+           ebb: This close-tag seemed out of place so I commented it out.
+           Just double-check where scene 62 ends in your source? 
+           -->
             <sp>
                 <speaker who="carl">CARL</speaker>
                 <diag>
