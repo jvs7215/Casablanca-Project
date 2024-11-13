@@ -634,8 +634,9 @@
                 <speaker who="carl">CARL</speaker>
                 <diag> Oh, thank you, Herr Rick. Sacha will be happy to hear it. I owe him money.
                 </diag>
+                <dir>Carl laughs. </dir>
             </sp>
-            <dir>Carl laughs. </dir>s <sp>
+            <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> Now you finish locking up, will you, Carl? </diag>
             </sp>
@@ -1660,7 +1661,7 @@
             <setting>EXT. AIRPORT - NIGHT he entire airport is surrounded by a heavy fog. The
                 outline of the transport plane is barely visible. </setting>
         </scene>
-        <scene n="75"><camera>CUT TO:</camera> INT/EXT. AIRPORT HANGAR - NIGHT <dir>A uniformed
+        <scene n="75"><camera>CUT TO:</camera> <setting>INT/EXT. AIRPORT HANGAR - NIGHT</setting> <dir>A uniformed
                 ORDERLY uses a telephone near the hangar door. On the airfield a transport plane is
                 being readied.</dir>
             <sp><speaker who="ord">ORDERLY</speaker>
@@ -1745,7 +1746,7 @@
             <setting>EXT. ROAD - NIGHT Major Strasser drives at break-neck speed towards the
                 airport. He HONKS his horn furiously. </setting>
         </scene>
-        <scene n="77"><camera>CUT TO:</camera> INT/EXT. AIRPORT HANGAR - NIGHT <dir>Laszlo returns.
+        <scene n="77"><camera>CUT TO:</camera><setting> INT/EXT. AIRPORT HANGAR - NIGHT </setting><dir>Laszlo returns.
                 Rick walks into the hangar and Renault hands him the letters. He walks back out to
                 Laszlo.</dir>
             <sp><speaker who="las">LASZLO</speaker><diag> Everything in order? </diag></sp>
@@ -1778,7 +1779,7 @@
             <dir>On the airfield the airplane engine TURNS OVER and the propellers start turning.
                 They all turn to see the plane readying for take-off. Ilsa looks at Rick and he
                 returns her stare with a blank expression. He then glances at Laszlo, as does Ilsa.
-                Then Laszlo breaks the silence. </dir>s <sp><speaker who="las"
+                Then Laszlo breaks the silence. </dir> <sp><speaker who="las"
                     >LASZLO</speaker><diag> Are you ready Ilsa? </diag></sp>
             <sp><speaker who="ilsa">ILSA</speaker><diag> Yes, I'm ready. <descr>to Rick</descr>
                     Goodbye, Rick. God bless you. </diag></sp>
