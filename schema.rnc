@@ -3,12 +3,23 @@ xml = element xml {metadata, body}
     metadata = element metadata {text}
     body = element body {scene+}
         scene = element scene {n, (camera | setting | sp | dir | descr)*}
+        # ebb: I think you don't want mixed{ } content here: <scene> contains elements
+        # but those elements can appear in any order. There doesn't seem to be a good reason
+        # to let text be flowing around those elements. 
             n = attribute n {xsd:int}
             camera = element camera {text}
             setting = element setting {text}
             sp = element sp {speaker, (diag | dir | descr)*}
+            #  The sp elements have a selection of elements that can appear in any order, 
+            # but ONLY after the speaker has been named. 
+            # So <speaker. always comes first, and then you have a choice of those others. 
             dir = element dir {mixed{camera*}}
+            # dir seems like sometimes it has a <camera>  direction in with the 
+            # direction of an action. 
                 speaker = element speaker {who, text}
                     who = attribute who {text}
                     diag = element diag {mixed{(descr | dir)*}}
                         descr = element descr {text}
+                        # Does descr ever have camera info? If so, model it like <dir>. 
+                        # I think this just works, though: descr for describing how a character
+                        # is behaving seems to always just be text description. 
