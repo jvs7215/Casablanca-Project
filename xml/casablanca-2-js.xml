@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-    <metadata/>
+    <metadata>
+        <movie>
+            <director>Michael Curtiz</director>
+            <wrldPrem>Nov. 26 1942</wrldPrem>
+            <loc>WB studios, Burbank, CA</loc>
+            <loc>Van Nuys Airport, LA</loc>
+            <producer>Hal B. Wallis</producer>
+            <producer>Warner Bros</producer>
+            <writer>Howard Koch</writer>
+            <writer>Julius J. Epstein</writer>
+            <writer>Philip G. Epstein</writer>
+            <basedOn>Everybody Comes to Rick’s (stage play); written by Murray Burnett and Joan
+                Alison</basedOn>
+            <composer>Max Steiner</composer>
+            <starring>Humphrey Bogart</starring>
+            <starring>Ingrid Bergman</starring>
+            <starring>Paul Henreid</starring>
+            <starring>Conrad Veidt</starring>
+            <starring>Claude Rains</starring>
+            <cinematography>Arthur Edeson</cinematography>
+            <editor>Owen Marks</editor>
+        </movie>
+        <script>
+            <numScenes>77</numScenes>
+            <url>https://app.studiobinder.com/company/580e85847e7982164664e844/collab/5eac35a683f7a90bfc3fc810/projects/5de590454f452c09a98e975b/document/5de5904f1fe52b06c2f4bd79/%5Bobject%20Object%5D?utm_source=blog&amp;utm_medium=sb-app-link&amp;utm_campaign=script&amp;utm_term=casablanca-script-breakdown&amp;utm_content=full-script-pdf-download</url>
+            <generatedBy>Brent Dunham</generatedBy>
+            <date>Dec. 2</date>
+            <publisher>StudioBinder Inc.</publisher>
+            <website> https://www.studiobinder.com/</website>
+        </script>
+    </metadata>
     <body>
         <scene n="22">
             <camera>CUT TO:</camera>
@@ -205,12 +235,11 @@
             <dir> Sam starts to play "As Time Goes By." Rick just stares ahead as orchestra MUSIC
                 slowly joins Sam's playing. </dir>
         </scene>
-        <dir><camera>DISSOLVE TO:</camera> MONTAGE - PARIS IN THE SPRING A) The Arc de Triomphe
-            from a distance. B) Rick drives a small, open car slowly along the boulevard. He puts
-            his arm around Ilsa. The background scenery changes to a country road as she snuggles
-            close to him and puts her head on his shoulder. C) An excursion boat on the Seine. Rick
-            and Ilsa stand at the rail of the boat. They seem to be transported by each other as
-            Ilsa laughs. </dir>
+        <dir><camera>DISSOLVE TO:</camera> MONTAGE - PARIS IN THE SPRING A) The Arc de Triomphe from
+            a distance. B) Rick drives a small, open car slowly along the boulevard. He puts his arm
+            around Ilsa. The background scenery changes to a country road as she snuggles close to
+            him and puts her head on his shoulder. C) An excursion boat on the Seine. Rick and Ilsa
+            stand at the rail of the boat. They seem to be transported by each other as Ilsa laughs. </dir>
         <scene n="25">
             <camera>CUT TO:</camera>
             <setting>INT. RICK'S PARIS APARTMENT - DAY Ilsa fixes flowers at the window while Rick
@@ -286,10 +315,10 @@
             </sp>
             <dir> They kiss passionately.</dir>
         </scene>
-        <dir><camera>CUT TO:</camera> MONTAGE - NEWSREEL FOOTAGE OF THE GERMAN OCCUPATION OF
-            FRANCE. A) The rubble of a burned-out, demolished building. A sign with an arrow points
-            to Paris. B) German troops crossing a river. C) Tanks rolling down the road toward
-            Paris. D) German war planes overhead. </dir>
+        <dir><camera>CUT TO:</camera> MONTAGE - NEWSREEL FOOTAGE OF THE GERMAN OCCUPATION OF FRANCE.
+            A) The rubble of a burned-out, demolished building. A sign with an arrow points to
+            Paris. B) German troops crossing a river. C) Tanks rolling down the road toward Paris.
+            D) German war planes overhead. </dir>
         <scene n="29">
             <camera>CUT TO:</camera>
             <setting>EXT. PARIS CAFE - DAY A man sells newspapers to people crowded around him.
@@ -358,8 +387,8 @@
             </sp>
             <sp>
                 <speaker who="ilsa">ILSA</speaker>
-                <diag> Ten years ago? Let's see-- <dir>pause as she thinks a bit</dir> --Yes. I
-                    was having a brace put on my teeth. Where were you? </diag>
+                <diag> Ten years ago? Let's see-- <dir>pause as she thinks a bit</dir> --Yes. I was
+                    having a brace put on my teeth. Where were you? </diag>
             </sp>
             <sp>
                 <speaker who="rick">RICK</speaker>
@@ -490,8 +519,8 @@
             </sp>
             <dir> Sam pulls an envelope from his pocket. Rick grabs it, opens it, and stares down at
                 the letter. </dir>
-            <dir>INSERT LETTER Richard, I cannot go with you or ever see you again. You must not
-                ask why. Just believe that I love you. Go, my darling, and God bless you. Ilsa </dir>
+            <dir>INSERT LETTER Richard, I cannot go with you or ever see you again. You must not ask
+                why. Just believe that I love you. Go, my darling, and God bless you. Ilsa </dir>
             <setting> Raindrops pour down the letter, smudging the writing. </setting>
             <dir>BACK TO SCENE</dir>
             <setting> A whistle BLOWS. </setting>
@@ -1252,8 +1281,8 @@
             </sp>
             <sp>
                 <speaker who="fer">FERRARI</speaker>
-                <diag> Well, good luck. But be careful. <dir>a flick of his eyes in the direction
-                        of the bazaar</dir> You know you're being shadowed? </diag>
+                <diag> Well, good luck. But be careful. <dir>a flick of his eyes in the direction of
+                        the bazaar</dir> You know you're being shadowed? </diag>
             </sp>
             <dir>Laszlo glances in the direction of the bazaar. </dir>
             <sp>
@@ -1443,8 +1472,8 @@
             <sp>
                 <speaker who="foff">FRENCH OFFICER</speaker>
                 <diag>
-                    <dir>in French</dir> Say, you, you are not French to go with a German like
-                    this! </diag>
+                    <dir>in French</dir> Say, you, you are not French to go with a German like this!
+                </diag>
             </sp>
             <sp>
                 <speaker who="yvo">YVONNE</speaker>
@@ -1464,8 +1493,8 @@
             <sp>
                 <speaker who="goff">GERMAN OFFICER</speaker>
                 <diag>
-                    <dir>in French </dir>No, no, no, no! One minute! <dir>in English</dir> What
-                    did you say? Would you kindly repeat it? </diag>
+                    <dir>in French </dir>No, no, no, no! One minute! <dir>in English</dir> What did
+                    you say? Would you kindly repeat it? </diag>
             </sp>
             <sp>
                 <speaker who="foff">FRENCH OFFICER</speaker>
@@ -1562,12 +1591,18 @@
                 <diag>
                     <dir>as he pours</dir> For Mrs. Leuchtag. </diag>
             </sp>
-            <sp><speaker who="mrsl">MRS. LEUCHTAG </speaker><diag>Thank you, Carl.</diag></sp>
+            <sp>
+                <speaker who="mrsl">MRS. LEUCHTAG </speaker>
+                <diag>Thank you, Carl.</diag>
+            </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
-                <diag> For Mr. Leuchtag. <setting>MR. LEUCHTAG Carl, sit down. Have a brandy with
-                        us. MRS. LEUCHTAG beaming with happiness To celebrate our leaving for
-                        America tomorrow. Carl sits down. </setting></diag>
+                <diag> For Mr. Leuchtag. </diag>
+            </sp>
+            <sp>
+                <speaker who="mrl">MR. LEUCHTAG</speaker>
+                <diag>Carl, sit down. Have a brandy with us. MRS. LEUCHTAG beaming with happiness To
+                    celebrate our leaving for America tomorrow. Carl sits down.</diag>
             </sp>
             <sp>
                 <speaker who="carl">CARL</speaker>
@@ -1575,8 +1610,10 @@
                     and a third glass.</diag>
             </sp>
             <dir>He produces a glass from a back pocket. </dir>
-            <sp><speaker who="mrsl">MRS. LEUCHTAG</speaker>
-                <diag>At last the day has come.</diag></sp>
+            <sp>
+                <speaker who="mrsl">MRS. LEUCHTAG</speaker>
+                <diag>At last the day has come.</diag>
+            </sp>
             <sp>
                 <speaker who="mrl">MR. LEUCHTAG</speaker>
                 <diag> Frau Leuchtag and I are speaking nothing but English now.</diag>
@@ -1803,7 +1840,8 @@
                 demoralized to move. While Rick checks the reservation list, Ilsa and Laszlo enter
                 the cafe. In the background we hear Sam playing, ironically enough, "It Had to Be
                 You." Rick greets Ilsa and Laszlo.</dir>
-            <sp><speaker who="rick">RICK</speaker>
+            <sp>
+                <speaker who="rick">RICK</speaker>
                 <diag> Good evening. </diag>
             </sp>
             <sp>
@@ -1875,8 +1913,7 @@
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <dir>to Jan</dir> Have you tried twenty-two tonight? I said, twenty-two.
-                </diag>
+                    <dir>to Jan</dir> Have you tried twenty-two tonight? I said, twenty-two. </diag>
             </sp>
             <dir>Jan looks at Rick, then at the chips in his hand. He pauses, then puts the chips on
                 twenty-two. Rick and the croupier exchange looks. The croupier understands what Rick
@@ -1892,9 +1929,9 @@
             <sp>
                 <speaker who="rick">RICK</speaker>
                 <diag>
-                    <dir>not even looking at Jan</dir> Leave it there. Jan hesitates, then
-                    withdraws his hands. Carl continues to watch. The wheel spins. Nobody speaks
-                    while it spins. It stops. </diag>
+                    <dir>not even looking at Jan</dir> Leave it there. Jan hesitates, then withdraws
+                    his hands. Carl continues to watch. The wheel spins. Nobody speaks while it
+                    spins. It stops. </diag>
             </sp>
             <sp>
                 <speaker who="cro">CROUPIER</speaker>

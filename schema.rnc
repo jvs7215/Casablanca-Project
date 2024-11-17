@@ -1,7 +1,27 @@
 start = xml
+#JS: added metadata and its children elements; Note: use attribute types instead to change numScenes to xsd:int, date to xsd:date, and website to xsd:URI?
 xml = element xml {metadata, body}
-    metadata = element metadata {text}
-    body = element body {scene+}
+    metadata = element metadata {movie, script}
+        movie = element movie {director, wrldPrem, loc+, producer+, writer+, basedOn, composer, starring+, cinematography, editor}
+            director = element director {text}
+            wrldPrem = element wrldPrem {text}
+            loc = element loc {text}
+            producer = element producer {text}
+            writer = element writer {text}
+            basedOn = element basedOn {text}
+            composer = element composer {text}
+            starring = element starring {text}
+            cinematography = element cinematography {text}
+            editor = element editor {text}
+        script = element script {numScenes, url, generatedBy, date, publisher, website}
+            url = element url {text}
+            numScenes = element numScenes {text}
+            generatedBy = element generatedBy {text}
+            date = element date {text}
+            publisher = element publisher {text}
+            website = element website {text}
+    #JS: allowed for dir in body as well to account for the montage scenes in my portion for the XML
+    body = element body {(scene | dir)+}
         scene = element scene {n, (camera | setting | sp | dir | descr)*}
         # ebb: I think you don't want mixed{ } content here: <scene> contains elements
         # but those elements can appear in any order. There doesn't seem to be a good reason
