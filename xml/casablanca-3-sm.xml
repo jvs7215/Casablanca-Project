@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
-    <metadata> </metadata>
+    <metadata>
+        <movie>
+            <director>Michael Curtiz</director>
+            <wrldPrem>Nov. 26 1942</wrldPrem>
+            <loc>WB studios, Burbank, CA</loc>
+            <loc>Van Nuys Airport, LA</loc>
+            <producer>Hal B. Wallis</producer>
+            <producer>Warner Bros</producer>
+            <writer>Howard Koch</writer>
+            <writer>Julius J. Epstein</writer>
+            <writer>Philip G. Epstein</writer>
+            <basedOn>Everybody Comes to Rick’s (stage play); written by Murray Burnett and Joan
+                Alison</basedOn>
+            <composer>Max Steiner</composer>
+            <starring>Humphrey Bogart</starring>
+            <starring>Ingrid Bergman</starring>
+            <starring>Paul Henreid</starring>
+            <starring>Conrad Veidt</starring>
+            <starring>Claude Rains</starring>
+            <cinematography>Arthur Edeson</cinematography>
+            <editor>Owen Marks</editor>
+        </movie>
+        <script>
+            <numScenes>77</numScenes>
+            <url>https://app.studiobinder.com/company/580e85847e7982164664e844/collab/5eac35a683f7a90bfc3fc810/projects/5de590454f452c09a98e975b/document/5de5904f1fe52b06c2f4bd79/%5Bobject%20Object%5D?utm_source=blog&amp;utm_medium=sb-app-link&amp;utm_campaign=script&amp;utm_term=casablanca-script-breakdown&amp;utm_content=full-script-pdf-download</url>
+            <generatedBy>Brent Dunham</generatedBy>
+            <date>Dec. 2</date>
+            <publisher>StudioBinder Inc.</publisher>
+            <website> https://www.studiobinder.com/</website>
+        </script>
+    </metadata>
     <body>
         <scene n="46">
             <camera>CUT TO:</camera>
