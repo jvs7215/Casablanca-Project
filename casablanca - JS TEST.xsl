@@ -6,12 +6,15 @@
     xmlns="http://www.w3.org/1999/xhtml"
     exclude-result-prefixes="xs cbml"
     version="3.0"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+    >
+    
+    <!--Goes in stylesheet above    
+        xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"-->
     
     <xsl:output method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no"
         indent="yes"/>
     
-    <xd:doc scope="stylesheet">
+<!--    <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Nov 18, 2024</xd:p>
             <xd:p><xd:b>Author:</xd:b>Jessica Salemme</xd:p>
@@ -20,7 +23,7 @@
             <xd:p>XSLT transformation to HTML our casablanca.xml</xd:p>
             <xd:p>Original Script Source: Brent Dunham  </xd:p>
         </xd:desc>
-    </xd:doc> 
+    </xd:doc> -->
     
      <!--    JS: Does this reach into our casablanca collection correctly?
      The folder xml has:
@@ -37,7 +40,7 @@
     <xsl:variable name="casablancaColl" as="document-node()+"
         select="collection('xml/?select=*.xml')"/>
     
-    <xsl:variable name="characters" as="xs:string+" select="casablancaColl//speaker/@who ! normalize-space() => distinct-values()"/>
+    <xsl:variable name="characters" as="xs:string+" select="$casablancaColl//speaker/@who ! normalize-space() => distinct-values()"/>
     
     <xsl:template match="/">
         
@@ -51,7 +54,7 @@
             </head>
             
             <body>
-                <h1><xsl:apply-templates select="collection(casablancaColl//movie/title)[1]"/></h1>
+                <h1><xsl:apply-templates select="collection($casablancaColl//movie/title)[1]"/></h1>
                 <section id="toc">
                     <h2>Contents</h2>
                     <!-- ebb: We're going to output a cast of characters and the scenes numbers in which they appear.
@@ -62,7 +65,7 @@
                             <th>Characters</th><!--second column table heading-->
                         </tr>
                         
-                        <xsl:apply-templates select="casablancaColl//scene[@n]" mode="toc">
+                        <xsl:apply-templates select="$casablancaColl//scene[@n]" mode="toc">
                             
                         </xsl:apply-templates>
                         <!-- ebb: Notice how we open up xsl:apply-templates to apply xsl:sort. 
@@ -77,7 +80,7 @@
                 
                 <section id="readingView">
                     
-                    <xsl:apply-templates select="casablancaColl//scene[@n]"/>
+                    <xsl:apply-templates select="$casablancaColl//scene[@n]"/>
                     
                 </section>
             </body>
