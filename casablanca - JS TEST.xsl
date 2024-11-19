@@ -62,7 +62,12 @@
                     <table>
                         <tr>
                             <th>Scene Number</th><!--first column table heading-->
+                            <td><xsl:apply-templates select="scene"/></td>  <!-- c.k. adding an output to table cell for tr to copy and spread -->
+                            <td><xsl:value-of select="descendant::scene/@n ! normalize-space() => distinct-values()"/></td> <!-- grabbing scene number's attribute to give us the number -->
+                            
                             <th>Characters</th><!--second column table heading-->
+                            <td><xsl:apply-templates select="scene"></xsl:apply-templates></td> 
+                            <td><xsl:value-of select="descendant::speaker"/></td> <!-- c.k. grabbing from body/scene/sp/speaker and adding text names to table cell  -->
                         </tr>
                         
                         <xsl:apply-templates select="$casablancaColl//scene[@n]" mode="toc">
