@@ -26,8 +26,8 @@ div.navBar {
 
     /*space around text*/
     padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
+    padding-bottom: 20px;
+
 }
 
 /*readding default margin*/
@@ -94,6 +94,19 @@ h2 {
 
 .imgFormat {
 }
+
+/*make buttons fade*/
+.btnFade {
+background-color: #913d04;
+  margin: 0;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btnFade:hover {background-color: tan;}
 
 
 .footer {
