@@ -18,6 +18,7 @@
         <xd:desc/>
     </xd:doc>
     <xsl:template match="descendant::title">
+        <link href="docs/style.css"></link>
     <html><text xmlns="http://www.w3.org/2000/svg">
     <head>
         <title>Casablanca</title>
