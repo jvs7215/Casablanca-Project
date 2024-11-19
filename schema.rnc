@@ -2,7 +2,8 @@ start = xml
 #JS: added metadata and its children elements; Note: use attribute types instead to change numScenes to xsd:int, date to xsd:date, and website to xsd:URI?
 xml = element xml {metadata, body}
     metadata = element metadata {movie, script}
-        movie = element movie {director, wrldPrem, loc+, producer+, writer+, basedOn, composer, starring+, cinematography, editor}
+        movie = element movie {title, director, wrldPrem, loc+, producer+, writer+, basedOn, composer, starring+, cinematography, editor}
+            title = element title {text}
             director = element director {text}
             wrldPrem = element wrldPrem {text}
             loc = element loc {text}
