@@ -33,7 +33,20 @@ div.navBar {
 /*readding default margin*/
 .spacing {
     margin: 20px;
+    
 }
+
+/*adds a border around p elements*/
+.textBorder {
+    margin: 20px;
+    border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #e3b381;
+    box-shadow: 10px 5px 5px tan;
+    border-color: #854c1d;
+}
+
 
 .image-spacing{
     margin-top: 100px;
@@ -63,6 +76,10 @@ div.navBar {
     height: 100vh;
 }
 
+bgImg {
+    background-size:cover;
+}
+
 .pdf-embed {
     width: 80%;
     height: 80%;
@@ -79,10 +96,18 @@ h1 {
     text-shadow: 3px 3.5px 4px #9c5821;
 }
 
-h2 {
 
-    margin: 20px;
+/*adds border around h2s*/
+h2 {
+    margin:20px;
     color: #854c1d;
+    text-shadow: 3px 3.5px 4px #ce752d;
+    border: solid;
+    border-radius: 12px;
+    display:inline;
+    padding: 8px;
+    background-color: #e3b381;
+    box-shadow: 10px 5px 5px tan;
 }
 
 
@@ -95,7 +120,7 @@ h2 {
 .imgFormat {
 }
 
-/*make buttons fade*/
+/*make buttons change on hover*/
 .btnFade {
 background-color: #913d04;
   margin: 0;
@@ -106,7 +131,9 @@ background-color: #913d04;
   transition: 0.3s;
 }
 
-.btnFade:hover {background-color: tan;}
+.btnFade:hover {background-color: tan;
+color: black;}
+
 
 
 .footer {
