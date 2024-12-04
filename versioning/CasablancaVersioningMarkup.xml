@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="Casablanca-Project/versioning/versioningschema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="versioningschema.rnc" type="application/relax-ng-compact-syntax"?>
 <xml>
     <metadata>
         <fileDesc>
@@ -44,14 +44,14 @@
         
     </metadata>
     <script>
-        <scene>
-           <app> <rdg wit="77-scene-alt"><dir> Strasser watches the plane in agony. His eyes dart towards the
+        <div>
+           <app> <rdg wit="#77-scene-alt"><dir> Strasser watches the plane in agony. His eyes dart towards the
                 telephone. He runs
                 toward it and desperately grabs the receiver.</dir></rdg>
-               <rdg wit="1942-06-01-screenplay"><scene n="275">MED. SHOT - NEAR HANGAR</scene><dir>Strasser watches the plane in agony. His eyes dart toward the telephone.</dir>
-                   <scene n="276">CLOSE SHOT - RENAULT</scene><dir>He watches fascinated.</dir>
-                   <scene n="277">MED. SHOT - RICK AND STRASSER</scene><dir>Strasser runs toward the telephone.</dir></rdg>
-               <rdg wit="everybody-play"><act n="3"/><sp><speaker who="sam">Sam</speaker>
+               <rdg wit="#1942-06-01-screenplay"><scene n="275"><dir>MED. SHOT - NEAR HANGAR</dir><dir>Strasser watches the plane in agony. His eyes dart toward the telephone.</dir></scene>
+                   <scene n="276"><dir>CLOSE SHOT - RENAULT</dir><dir>He watches fascinated.</dir></scene>
+                   <scene n="277"><dir>MED. SHOT - RICK AND STRASSER</dir><dir>Strasser runs toward the telephone.</dir></scene></rdg>
+               <rdg wit="#everybody-play"><act n="3"/><sp><speaker who="sam">Sam</speaker>
                    <diag><dir>who sees the gun and stops</dir> Whut's de trouble, boss?</diag></sp>
                    <sp><speaker who="rick">Rick</speaker>
                    <diag>No trouble, Sam. The Captain and I want to hear a little music. Get over to the piano, but take care when you step across the line of fire.</diag></sp>
@@ -89,11 +89,11 @@
                    <diag><descr>Coolly</descr> Not really. <dir>He rises slowly. The RABBIT watches him with agonized eyes</dir></diag></sp>
                    <sp><speaker who="str">Strasser</speaker>
                    <diag>I am waiting.</diag></sp>
-                   <sp><speaker>Rick</speaker>
+                   <sp><speaker who="rick">Rick</speaker>
                   <diag><dir> Starts walking slowly towards door</dir> So long, Sam. I'd go over to the Blue Parrot, if I were you <dir>As he passes Rinaldo, who has not moved</dir></diag></sp>
                    <sp><speaker who="rin">Rinaldo</speaker>
                    <diag>Why did you do it, Rick?</diag></sp>
-                   <sp><speaker>Rick</speaker>
+                   <sp><speaker who="rick">Rick</speaker>
                    <diag><descr>Pausing</descr> For the folding money, Luis, for the folding money. You owe me five thousand francs. <dir>RICK walks out with STRASSER as the
                    
                    
@@ -101,7 +101,7 @@
                    
                    CURTAIN FALLS</dir></diag></sp></rdg>
            </app>
-            <app><rdg wit="77-scene-alt"><sp>
+            <app><rdg wit="#77-scene-alt"><sp>
                 <speaker who="str"> STRASSER</speaker>
                 <diag> Hello? </diag>
             </sp>
@@ -118,16 +118,16 @@
                  <diag> Put it down! </diag>
              </sp>
             </rdg>
-                <rdg wit="1942-06-01-screenplay"><scene n="278">CLOSE SHOT - AT TELEPHONE</scene><dir>Strasser desperately grasps the receiver.</dir> 
+                <rdg wit="#1942-06-01-screenplay"><scene n="278"><dir>CLOSE SHOT - AT TELEPHONE</dir><dir>Strasser desperately grasps the receiver.</dir></scene> 
                 <sp><speaker who="str">STRASSER</speaker>
                 <diag><descr>into phone</descr>Hello... Hello...</diag></sp>
                     <sp><speaker who="rick">RICK'S VOICE</speaker>
                     <diag><descr>over scene</descr>Put that phone down!</diag></sp>
                     <sp><speaker who="str">STRASSER</speaker>
                     <diag><descr>into phone</descr> Get me the Radio Tower.</diag></sp>
-                    <scene n="278">CLOSE SHOT - AT TELEPHONE</scene>
-                    <sp><speaker who="rick">RICK</speaker></sp>
-                    <diag>Put it down.</diag>
+                    <scene n="278"><dir>CLOSE SHOT - AT TELEPHONE</dir>
+                    <sp><speaker who="rick">RICK</speaker>
+                        <diag>Put it down.</diag></sp></scene>
                 </rdg>
             </app>
             <dir>
@@ -137,27 +137,28 @@
                         at Rick. The
                         bullet misses its mark. Rick now SHOOTS at Strasser, who
                         crumples to the
-                        ground. 
-                        <app><rdg wit="77-scene-alt">At the sound of an approaching car both men turn. A
+                        ground.</dir> 
+                        <app><rdg wit="#77-scene-alt"><dir>At the sound of an approaching car both men turn. A
                         police car
                         SPEEDS in and comes to a stop near Renault. Four gendarmes
                         hurriedly jump
                         out. In the distance the plane turns onto the runway. The
                         gendarmes run to
-                        Renault. The first one hurriedly salutes him.</rdg></app>
-                <app><rdg wit="1942-06-01-screenplay"><scene n="279">MED. SHOT - RICK AND RENAULT</scene><dir>Renault continues to stare off scene. Rick watches upward, as the SOUND of the plane becomes fainter.</dir>
-                <scene n="280">LONG SHOT - SKY</scene><dir>The Transport grows smaller in the distance.</dir>
-                <scene n="281">MED. SHOT - NEAR HANGAR</scene><dir>Rick continues to stare aloft. At the SOUND of a car approaching, both men turn.</dir>
-                <scene n="282">LONG SHOT - A POLICE CAR</scene><dir>speeds in and comes to a stop near Renault. Four police hurriedly alight.</dir>
-                <scene n="283">CLOSE SHOT - RENAULT</scene><dir>looking at Rick.</dir>
-                <scene n="284">CLOSE SHOT - RICK</scene><dir>as he returns Renault's gaze. His eyes are expressionless.</dir>
-                <scene n="285">FULL SHOT</scene><dir>The gendarmes run to Renault. Renault returns to them.</dir></rdg></app>
-            </dir>
+                        Renault. The first one hurriedly salutes him.</dir></rdg>
+                            <rdg wit="#1942-06-01-screenplay"><scene n="279"><dir>MED. SHOT - RICK AND RENAULT</dir><dir>Renault continues to stare off scene. Rick watches upward, as the SOUND of the plane becomes fainter.</dir></scene>
+                                <scene n="280"><dir>LONG SHOT - SKY</dir><dir>The Transport grows smaller in the distance.</dir></scene>
+                <scene n="281"><dir>MED. SHOT - NEAR HANGAR</dir></scene><dir>Rick continues to stare aloft. At the SOUND of a car approaching, both men turn.</dir>
+                                <scene n="282"><dir>LONG SHOT - A POLICE CAR</dir><dir>speeds in and comes to a stop near Renault. Four police hurriedly alight.</dir></scene>
+                                <scene n="283"><dir>CLOSE SHOT - RENAULT</dir><dir>looking at Rick.</dir></scene>
+                <scene n="284"><dir>CLOSE SHOT - RICK</dir></scene><dir>as he returns Renault's gaze. His eyes are expressionless.</dir>
+                                <scene n="285"><dir>FULL SHOT</dir><dir>The gendarmes run to Renault. Renault returns to them.</dir></scene></rdg>
+                        </app>
+
             <sp>
                 <speaker who="gen">GENDARME</speaker>
                 <diag> Mon Capitaine! </diag>
             </sp>
-            <app><rdg wit="77-scene-alt"><sp>
+            <app><rdg wit="#77-scene-alt"><sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> Major Strasser's been shot. </diag>
             </sp>
@@ -175,7 +176,7 @@
             <dir>The gendarmes take Strasser's body away and then drive off.
                 Renault walks inside
                 the hangar, picks up a bottle of Vichy water, and opens it. </dir></rdg>
-            <rdg n="1942-06-01-screenplay">
+            <rdg wit="#1942-06-01-screenplay">
                 <sp><speaker who="ren">RENAULT</speaker>
                 <diag>Major Strasser has been shot.<descr>pauses as he looks at Rick, then to the gendarmes</descr>Round up the usual suspects...</diag></sp>
                 <sp><speaker who="gen">GENDARME</speaker>
@@ -192,10 +193,10 @@
                 <speaker who="rick">RICK</speaker>
                 <diag> Maybe, but it seemed like a good time to start. </diag>
             </sp>
-            <app><rdg wit="77-scene-alt"><sp>
+            <sp>
                 <speaker who="ren">RENAULT</speaker>
-                <diag> I think perhaps you're right. </diag>
-            </sp>
+                <diag> I think perhaps you're right. </diag></sp>
+            <app><rdg wit="#77-scene-alt">
             <dir>As he pours the water into a glass, Renault sees the Vichy label
                 and quickly DROPS
                 the bottle into a trash basket which he then KICKS over. He walks
@@ -205,25 +206,29 @@
                 disappears into the clouds. Rick and Louis slowly walk away from
                 the hangar toward
                 the runway.</dir></rdg>
-                <rdg wit="1942-06-01-screenplay">
+            </app>
+            <app>
+                <rdg wit="#1942-06-01-screenplay">
                     <sp><speaker who="ren">RENAULT</speaker>
-                        <diag><descr>lights a cigarette</descr>It might be just as well for you to disappear from Casablanca. I understand there's a Free French garrison over at Bravvaville. I might be induced to arrange your passage.</diag></sp>
-            </rdg></app>
-            <sp>
+                        <diag><descr>lights a cigarette</descr>It might be just as well for you to disappear from Casablanca. 
+                            I understand there's a Free French garrison over at Bravvaville. I might be induced to arrange your passage.</diag></sp>
+            </rdg>
+            <rdg wit="#77-scene-alt"><sp>
                 <speaker who="ren">RENAULT</speaker>
                 <diag> It might be a good idea for you to disappear from Casablanca
                     for a while.
                     There's a Free French garrison over at Brazzaville. I could be
                     induced to
                     arrange a passage. </diag>
-            </sp>
-            <app><rdg wit="77-scene-alt"><sp>
+            </sp></rdg>
+            </app>
+            <app><rdg wit="#77-scene-alt"><sp>
                 <speaker who="rick">RICK</speaker>
                 <diag> My letter of transit? I could use a trip. But it doesn't
                     make any difference
                     about our bet. You still owe me ten thousand francs. </diag>
             </sp></rdg>
-            <rdg wit="1942-06-01-screenplay"><sp>
+            <rdg wit="#1942-06-01-screenplay"><sp>
                 <speaker who="rick">RICK</speaker>
                 <diag><descr>smiles</descr>My Letter of Transit? <descr>his eyes following the plane, which is now receding into the distance</descr>I could use a trip... But it doesn't make any difference about our bet, you still owe me the ten thousand francs.</diag>
             </sp></rdg></app>
@@ -245,7 +250,8 @@
                 <diag> Louis, I think this is the beginning of a beautiful
                     friendship. </diag>
             </sp>
-            <dir><app><rdg wit="77-scene-alt">The two walk off together into the night. </rdg></app>FADE OUT: THE END </dir>
-        </scene>
+          <app><rdg wit="#77-scene-alt"><dir>The two walk off together into the night.</dir> </rdg></app>
+                <dir>FADE OUT: THE END </dir>
+        </div>
     </script>
 </xml>

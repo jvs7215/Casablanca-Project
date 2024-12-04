@@ -1,18 +1,35 @@
 start = xml
 xml = element xml {metadata, script}
-    metadata = element metadata {screenplay}
-            a = element a {text, href}
-                href = attribute href {text}
-            screenplay = element screenplay {id}
-                 id = attribute id {text}
-    script = element script {app, scene}
-                scene = element scene {app}
-                 app = element app {rdg,}
-                     rdg = element rdg {wit, s{text, n, (camera | act | setting | scene | sp | dir | descr)*}}
-                         wit = attribute wit {text}
-                    n = attribute n {xsd:int}
+metadata = element metadata {fileDesc, sourceDesc}
+fileDesc = element fileDesc {title, editor, desc }
+    title = element title {text}
+    editor = element editor {text}
+    desc = element desc {text}
+    
+sourceDesc = element sourceDesc {listWit}
+    listWit = element listWit {witness+}
+    witness = element witness {xmlid, mixed{ (p | ptr)+} }
+    xmlid = attribute xml:id {"everybody-play" | "77-scene-alt" | "1942-06-01-screenplay"}
+    p = element p {mixed {(address | ptr | title | author)*}}
+    author = element author {text}
+    ptr = element ptr {target}
+    target = attribute target {xsd:anyURI}
+    address = element address {addrLine+, idno?}
+    addrLine = element addrLine {mixed {unclear*}}
+    idno = element idno {text}
+    unclear = element unclear {supplied?}
+    supplied = element supplied {text}
+            
+script = element script {\div}
+  \div = element div {n?, (app | dir | sp)+}
+   scene = element scene {n?, (app | dir | sp)+}
+   n = attribute n {xsd:int}
+   app = element app {rdg+}
+   rdg = element rdg {wit, (camera | act | setting | scene | sp | dir | descr)*}
+   wit = attribute wit {"#everybody-play" | "#77-scene-alt" | "#1942-06-01-screenplay"}
+                    
                     camera = element camera {text}
-                    act = element act {text}
+                    act = element act {n, text}
                     setting = element setting {text}
                     sp = element sp {speaker, (diag | dir | descr)*}
                     dir = element dir {mixed{camera*}}
