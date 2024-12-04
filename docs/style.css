@@ -95,6 +95,7 @@ h1 {
     color: #854c1d;
     text-align: center;
     text-shadow: 3px 3.5px 4px #9c5821;
+    font-size: 60px;
 }
 
 
@@ -147,3 +148,28 @@ color: black;}
     padding-left: 20px;
 
 }
+
+
+/*XSL/Reading View styling*/
+
+
+table {
+    margin: 20px;
+    border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #e3b381;
+    box-shadow: 10px 5px 5px tan;
+    border-color: #854c1d;
+    }
+    
+    
+    th {
+    border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #e3b381;
+    box-shadow: 10px 5px 5px brown;
+    border-color: #cf7940;
+    }
+
