@@ -23,7 +23,18 @@
                 </title>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
             </head>
+            
+            
+            
             <body>
+                <!-- NAV BAR-->
+                <div class="navBar">
+                    <a href="index.html" class="btnFade">Home</a><a href="script.html" class="btnFade"
+                        >Script PDF</a><a href="schema.html" class="btnFade">Schema</a><a
+                            href="methods.html" class="btnFade">Methods</a><a
+                                href="output.html" class="btnFade">Reading View</a>
+                </div>
+                
                 <h1>
                     <xsl:apply-templates select="descendant::title"/>
                 </h1>
@@ -93,7 +104,13 @@
         </section>
     </xsl:template>
 
-
+<!--scene formating testing-->
+    <xsl:template match="scene">
+        <div class="camera">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
     <xsl:template match="camera">
         <div class="camera">
             <xsl:apply-templates/>

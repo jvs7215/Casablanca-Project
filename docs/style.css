@@ -161,6 +161,7 @@ table {
     background-color: #e3b381;
     box-shadow: 10px 5px 5px tan;
     border-color: #854c1d;
+/*    justify-content: center;*/
     }
     
     
@@ -173,3 +174,17 @@ table {
     border-color: #cf7940;
     }
 
+
+div.camera {
+    margin: 20px;
+            border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #e3b381;
+    box-shadow: 10px 5px 5px brown;
+    border-color: #cf7940;
+}
+
+span.diag {
+    color: red;
+}
