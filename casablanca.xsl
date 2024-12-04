@@ -33,115 +33,115 @@
         <body><table>
             <tr>
                 <td><h2>Characters</h2></td>
-                <td><h2>Appearances</h2></td>
+                <td><h2>Number of Appearances</h2></td>
             </tr>
             <tr>
                 <td>Rick Blaine</td>
-                <td></td>
+                <td>341</td>
             </tr>
             <tr>
                 <td>Ilsa Lund</td>
-                <td></td>
+                <td>136</td>
             </tr>
             <tr>
                 <td>Captain Renault</td>
-                <td></td>
+                <td>174</td>
             </tr>
             <tr>
                 <td>Major Strasser</td>
-                <td></td>
+                <td>73</td>
             </tr>
             <tr>
                 <td>Victor Laszlo</td>
-                <td></td>
+                <td>132</td>
             </tr>
             <tr>
                 <td>Officer</td>
-                <td></td>
+                <td>5</td>
             </tr>
             <tr>
                 <td>Native</td>
-                <td></td>
+                <td>2</td>
             </tr>
             <tr>
                 <td>Frenchman</td>
-                <td></td>
+                <td>2</td>
             </tr>
             <tr>
                 <td>Jan</td>
-                <td></td>
+                <td>7</td>
             </tr>
             <tr>
                 <td>Arab</td>
-                <td></td>
+                <td>5</td>
             </tr>
             <tr>
                 <td>European</td>
-                <td></td>
+                <td>11</td>
             </tr>
             <tr>
                 <td>Tourist</td>
-                <td></td>
+                <td>3</td>
             </tr>
             <tr>
                 <td>Yvonne</td>
-                <td></td>
+                <td>14</td>
             </tr>
             <tr>
                 <td>German Officer</td>
-                <td></td>
+                <td>4</td>
             </tr>
             <tr>
                 <td>French Officer</td>
-                <td></td>
+                <td>7</td>
             </tr>
             <tr>
                 <td>Mr. Leuchtag</td>
-                <td></td>
+                <td>6</td>
             </tr>
             <tr>
                 <td>Mrs. Leuchtag</td>
-                <td></td>
+                <td>4</td>
             </tr>
             <tr>
                 <td>Carl</td>
-                <td></td>
+                <td>34</td>
             </tr>
             <tr>
                 <td>Annina</td>
-                <td></td>
+                <td>25</td>
             </tr>
             <tr>
                 <td>Headwaiter</td>
-                <td></td>
+                <td>3</td>
             </tr>
             <tr>
                 <td>Croupier</td>
-                <td></td>
+                <td>10</td>
             </tr>
             <tr>
                 <td>Customer</td>
-                <td></td>
+                <td>3</td>
             </tr>
             <tr>
                 <td>Sacha</td>
-                <td></td>
+                <td>11</td>
             </tr>
             <tr>
                 <td>Orderly</td>
-                <td></td>
+                <td>2</td>
             </tr>
             <tr>
                 <td>Officer</td>
-                <td></td>
+                <td>5</td>
             </tr>
             <tr>
                 <td>Ferrari</td>
-                <td></td>
+                <td>35</td>
             </tr>
             <tr>
                 <td>Gendarme</td>
-                <td></td>
+                <td>4</td>
             </tr>
         </table></body>
     </text></html>
