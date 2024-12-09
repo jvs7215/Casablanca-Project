@@ -1,32 +1,27 @@
 /*General Styling*/
 
+/*core colors
+#fff8f0; soft white
+#383b33; dark/grey black
+#e05d4f; red
+#6d95b5; blue*/
+
 body {
-    background-color: Bisque;
+    background-color: #fff8f0; /*soft white*/
     font-family: "Courier New", monospace;
     font-size: 20px;
-
+    color: #383b33; /*dark/grey black*/
     /*gets rid of default margin!*/
     margin: 0;
 }
 
 
 div.navBar {
-    background-color: tan;
+    background-color: #e05d4f; /*red*/
     font-size: 30px;
-    opacity: 0.6;
     justify-content: center;
-    display:flex;
-    width:100%;
-
-    /*    display: flex;
-    justify-content: left;*/
-    /*    nav bar border*/
-    /*    border-radius: 5px;
-    border-color: #bd8f79;
-    border-style: solid;
-    border-width: 5px;*/
-
-    /*space around text*/
+    display: flex;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -34,24 +29,14 @@ div.navBar {
 
 /*readding default margin*/
 .spacing {
-    margin: 20px;
-    
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
 }
 
-/*adds a border around p elements*/
-.textBorder {
-    margin: 20px;
-    border: solid;
-    border-radius: 12px;
-    padding: 8px;
-    background-color: #e3b381;
-    box-shadow: 10px 5px 5px tan;
-    border-color: #854c1d;
-}
-
-
-
-.image-spacing{
+.image-spacing {
     margin-top: 100px;
 }
 
@@ -63,7 +48,7 @@ div.navBar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adds a shadowy effect ***REMINDER*** add to all other inserted images for noir theme */
 }
 
-.image-container{
+.image-container {
     display: block;
     justify-content: center;
     align-items: center;
@@ -72,7 +57,7 @@ div.navBar {
     height: 80vh;
 }
 
-.container{
+.container {
     display: flex; /* Adding flex property for sizing */
     justify-content: center;
     align-items: center;
@@ -80,7 +65,7 @@ div.navBar {
 }
 
 bgImg {
-    background-size:cover;
+    background-size: cover;
 }
 
 .pdf-embed {
@@ -94,26 +79,43 @@ bgImg {
 /*header formating
  * sample style*/
 h1 {
-    color: #854c1d;
     text-align: center;
-    text-shadow: 3px 3.5px 4px #9c5821;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 3px 5.5px 1.5px #e05d4f; /*red*/
     font-size: 60px;
+
 }
 
 
 /*adds border around h2s*/
 h2 {
-    margin:20px;
-    color: #854c1d;
-    text-shadow: 3px 3.5px 4px #ce752d;
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: solid;
     border-radius: 12px;
-    display:inline;
+    display: inline;
     padding: 8px;
-    background-color: #e3b381;
-    box-shadow: 10px 5px 5px tan;
+    background-color: #fff8f0; /*soft white*/
+    ;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
 }
 
+/*adds a border around p elements*/
+.textBorder {
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #fff8f0; /*soft white*/
+    ;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 8px 5px 1px #e05d4f; /*red*/
+    border-color: #854c1d;
+}
 
 
 
@@ -126,27 +128,29 @@ h2 {
 
 /*make buttons change on hover*/
 .btnFade {
-background-color: #913d04;
-  margin: 0;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  opacity: 0.6;
-  transition: 0.3s;
+    background-color: #913d04;
+    margin: 0;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    /*  opacity: 0.6;
+  transition: 0.3s;*/
 }
 
-.btnFade:hover {background-color: tan;
-color: black;}
+.btnFade:hover {
+    background-color: #fff8f0; /*soft white*/
+    color: #383b33; /*dark/grey black*/
+}
 
 
 
 .footer {
-    background-color: tan;
-    opacity: 0.6;
-
+    background-color: #e05d4f; /*red*/
+    color: white;
+    font-weight: bold;
     /*space around text*/
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20px;
 
 }
@@ -156,33 +160,40 @@ color: black;}
 
 
 table {
-    margin: 20px;
+    margin: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
     border: solid;
     border-radius: 12px;
     padding: 8px;
-    background-color: #e3b381;
-    box-shadow: 10px 5px 5px tan;
+    background-color: #fff8f0; /*soft white*/
+    ; /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
     border-color: #854c1d;
-/*    justify-content: center;*/
-    }
-    
-    
-    th {
+    justify-content: center;
+    display: flex;
+}
+
+
+th {
+    margin-right: 70px;
     border: solid;
     border-radius: 12px;
-    padding: 8px;
-    background-color: #e3b381;
-    box-shadow: 10px 5px 5px brown;
-    border-color: #cf7940;
-    }
+    padding: 10px;
+    background-color: #fff8f0; /*soft white*/
+    ;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
+}
 
 
 div.camera {
     margin: 20px;
-            border: solid;
+    border: solid;
     border-radius: 12px;
     padding: 8px;
     background-color: #e3b381;
+    /* offset-x | offset-y | blur-radius | color */
     box-shadow: 10px 5px 5px brown;
     border-color: #cf7940;
 }
@@ -192,50 +203,56 @@ span.diag {
 }
 /* XSL: Versioning styling */
 div.intro {
-   width:95%; 
-   margin:auto;
-   display:flex; 
-   justify-content:space-around;
-   font-size:.9em;
-   color:#3f0000;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: .9em;
+    color: #3f0000;
 }
 div.flex {
-   width:95%; 
-   margin:auto;
-   display:flex; 
-   justify-content:space-around;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 div.everybody-play {
-    background-color:silver;
+    background-color: silver;
     padding: 2em;
-    flex:1;
+    flex: 1;
 }
 div.alt-77 {
-    background-color:Bisque;
-     padding: 2em;
-     flex:1;
+    background-color: Bisque;
+    padding: 2em;
+    flex: 1;
 }
 div.screenplay {
-    background-color:#ffda90;
-     padding: 2em;
-     flex:1;
+    background-color: #ffda90;
+    padding: 2em;
+    flex: 1;
 }
-div.united { 
-    background-color:Bisque;
-    padding:4em;
-    flex:2;
-    }
+div.united {
+    background-color: Bisque;
+    padding: 4em;
+    flex: 2;
+}
 /* make bordered h2s smaller on this page */
 div.intro div h2 {
-    font-size:1.2em;
-    margin:auto;
-    display:block;
+    font-size: 1.2em;
+    margin: auto;
+    display: block;
     margin-bottom: 1em;
+    /* offset-x | offset-y | blur-radius | color */
     box-shadow: 10px 5px 5px tan;
-    
+
 }
 
-p {margin:1em;}
+p {
+    margin: 1em;
+}
 
-span.dir {font-style:italic; padding-right: 1em;}
+span.dir {
+    font-style: italic;
+    padding-right: 1em;
+}
