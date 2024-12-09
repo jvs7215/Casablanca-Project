@@ -89,6 +89,119 @@
                     </xsl:for-each>
 
                 </table>
+                
+                <table>
+                    <tr>
+                        <td><h2>Locations</h2></td>
+                        <td><h2>Number of Appearances</h2></td>
+                        <td><h2>First Scene Appearance</h2></td>
+                    </tr>
+                    <tr>
+                        <td>Rick's Café</td>
+                        <td>39</td>
+                        <td>Scene 12</td>
+                    </tr>
+                    <tr>
+                        <td>Police Station</td>
+                        <td>1</td>
+                        <td>Scene 2</td>
+                    </tr>
+                    <tr>
+                        <td>Old Moorish Section of the City</td>
+                        <td>1</td>
+                        <td>Scene 1</td>
+                    </tr>
+                    <tr>
+                        <td>A Street in the Old Moorish Section</td>
+                        <td>1</td>
+                        <td>Scene 3</td>
+                    </tr>
+                    <tr>
+                        <td>Palais De Justice</td>
+                        <td>3</td>
+                        <td>Scene 4</td>
+                    </tr>
+                    <tr>
+                        <td>Sidewalk Café</td>
+                        <td>1</td>
+                        <td>Scene 5</td>
+                    </tr>
+                    <tr>
+                        <td>Airfield</td>
+                        <td>1</td>
+                        <td>Scene 11</td>
+                    </tr>
+                    <tr>
+                        <td>Rick's Paris Apartment</td>
+                        <td>1</td>
+                        <td>Scene 25</td>
+                    </tr>
+                    <tr>
+                        <td>Paris Café</td>
+                        <td>3</td>
+                        <td>Scene 26</td>
+                    </tr>
+                    <tr>
+                        <td>Ilsa's Paris Apartment</td>
+                        <td>1</td>
+                        <td>Scene 27</td>
+                    </tr>
+                    <tr>
+                        <td>La Belle Aurore</td>
+                        <td>1</td>
+                        <td>Scene 30</td>
+                    </tr>
+                    <tr>
+                        <td>Gare De Lyon</td>
+                        <td>1</td>
+                        <td>Scene 31</td>
+                    </tr>
+                    <tr>
+                        <td>Renault's Office</td>
+                        <td>4</td>
+                        <td>Scene 35</td>
+                    </tr>
+                    <tr>
+                        <td>Prefecture Lobby</td>
+                        <td>1</td>
+                        <td>Scene 36</td>
+                    </tr>
+                    <tr>
+                        <td>The Blue Parrot</td>
+                        <td>5</td>
+                        <td>Scene 39</td>
+                    </tr>
+                    <tr>
+                        <td>Black Market</td>
+                        <td>3</td>
+                        <td>Scene 38</td>
+                    </tr>
+                    <tr>
+                        <td>Hotel Hallway</td>
+                        <td>1</td>
+                        <td>Scene 54</td>
+                    </tr>
+                    <tr>
+                        <td>Hotel Room</td>
+                        <td>1</td>
+                        <td>Scene 55</td>
+                    </tr>
+                    <tr>
+                        <td>German Consulate</td>
+                        <td>1</td>
+                        <td>Scene 73</td>
+                    </tr>
+                    <tr>
+                        <td>Airport</td>
+                        <td>4</td>
+                        <td>Scene 74</td>
+                    </tr>
+                    <tr>
+                        <td>Airport Hangar</td>
+                        <td>2</td>
+                        <td>Scene 75</td>
+                    </tr>
+                </table>
 
                 <!-- BELOW is the Reading View processing -->
 
