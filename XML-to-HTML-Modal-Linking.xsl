@@ -33,6 +33,11 @@
                         >Script PDF</a><a href="schema.html" class="btnFade">Schema</a><a
                             href="methods.html" class="btnFade">Methods</a><a
                                 href="output.html" class="btnFade">Reading View</a>
+                    <a href="versions.html" class="btnFade"
+                        >Endings</a>
+                    <!-- 2024-12-08 ebb: I'm adding one more button for viewing the three different 
+                    script endings! If you want to include this a different way, feel free to change it!
+                    -->
                 </div>
                 
                 <h1>
@@ -104,12 +109,13 @@
         </section>
     </xsl:template>
 
-<!--scene formating testing-->
-    <xsl:template match="scene">
+<!--scene formating testing--> 
+    <!-- ebb: this one is conflicting with previous template matching on scenes. -->
+ <!--   <xsl:template match="scene">
         <div class="camera">
             <xsl:apply-templates/>
         </div>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template match="camera">
         <div class="camera">
@@ -137,7 +143,12 @@
         </span>
     </xsl:template>
 
-
+    <!-- ebb: added one more for directions / descriptions -->
+    <xsl:template match="sp/descr | dir">
+        <span class="dir">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 
 
 </xsl:stylesheet>

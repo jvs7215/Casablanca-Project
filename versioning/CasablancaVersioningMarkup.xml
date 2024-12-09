@@ -3,15 +3,16 @@
 <xml>
     <metadata>
         <fileDesc>
-            <title>Versioning experiment with Casablanca Scripts</title>
+            <title>Versioning the Casablanca Scripts</title>
             <editor>Sean Martin</editor>
-            <desc>I am hoping to explore how the ending for the play Everbody Comes To Rick's compares to two different drafts of the ending for Casablanca.</desc>
+            <desc>This explores how the ending for the play, Everbody Comes To Rick's compares to two different drafts of the ending for the movie, Casablanca.</desc>
         </fileDesc>
         <sourceDesc> 
             <listWit>
                 <witness xml:id="everybody-play"><p>This is the original stage play on which the movie Casablanca was based. 
                     In the PDF photo facsimile provided by the Internet Archive at <ptr target="https://archive.org/details/everybody-comes-to-ricks"/> and other locations 
-                    including <ptr target="http://vincasa.com/Screenplay-Everybody_Comes_to_Rick%27s.pdf"/>, this information is marked digitally in a red box. </p>
+                    including <ptr target="http://vincasa.com/Screenplay-Everybody_Comes_to_Rick%27s.pdf"/>, the information that this is the original source of Casablanca is 
+                marked digitally in a red box.</p>
                     
                     <p>The title is given is <title>EVERYBODY COMES TO RICK’S</title> By: <author>MURRAY BURNETT</author> and <author>JOAN ALISON</author>.</p>
                     
