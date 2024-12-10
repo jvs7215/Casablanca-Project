@@ -26,19 +26,363 @@
         <p class = "textBorder">With the help of Dr. B, we used regular expressions in search + replace operations over the XML Casablanca script to establish the main structure of our XML. We were able to isolate most scene, camera, sp, speaker, and diag elements using that method. Our next step was splitting the xml into three portions for each member to finish documenting. We split it up by approximate lines, to the closest scene. Once split, we individually used search + replace to add in "who=" attributes within the speaker elements. We had to manually move and tag instances of physical acting cues (dir elements) and tag emotional acting dues(descr elements).</p>
         
         <p class = "textBorder"> There we're some inconsistencies between the files that we had to quality check and adjust. For example, there were instances of montages within the middle section of the script that didn't exist in the other files. </p>
+        <pre>
+            &lt;body&gt;
+    &lt;scene n="0"&gt;
+        &lt;camera&gt;FADE IN: LONG SHOT — REVOLVING GLOBE&lt;/camera&gt;
+        &lt;setting&gt; A revolving globe. When it stops revolving it turns briefly into a contour map
+            of Europe, then into a flat map. Superimposed over this map are scenes of refugees
+            fleeing from all sections of Europe by foot, wagon, auto, and boat, and all
+            converging upon one point on the tip of Africa -- Casablanca. Arrows on the map
+            illustrate the routes taken as the voice of a NARRATOR describes the
+            migration.&lt;/setting&gt;
         
+        &lt;sp&gt;
+            &lt;speaker who="narr"&gt;NARRATOR&lt;/speaker&gt;
+            &lt;diag&gt;With the coming of the Second World War, many eyes in imprisoned Europe turned
+                hopefully, or desperately, toward the freedom of the Americas. Lisbon became the
+                great embarkation point. But not everybody could get to Lisbon directly, and so,
+                a tortuous, roundabout refugee trail sprang up. Paris to Marseilles, across the
+                Mediterranean to Oran, then by train, or auto, or foot, across the rim of Africa
+                to Casablanca in French Morocco. Here, the fortunate ones, through money, or
+                influence, or luck, might obtain exit visas and scurry to Lisbon, and from
+                Lisbon to the New World. But the others wait in Casablanca -- and wait -- and
+                wait -- and wait. The narrator's voice fade away...&lt;/diag&gt;
+        &lt;/sp&gt;
+    &lt;/scene&gt;
+        </pre>
         <h2>Metadata</h2>
         <p class = "textBorder">After we finished documenting the script, we added in the metadata and included a section for the movie metadata, and one for the script metadata. For both sections we included various aspects, such as the different people and locations involved for the movie metadata, and the script scenes and publishers for the script metadata.</p>
-        
+        <pre>
+            &lt;metadata&gt;
+    &lt;movie&gt;
+        &lt;title&gt;Casablanca&lt;/title&gt;
+        &lt;director&gt;Michael Curtiz&lt;/director&gt;
+        &lt;wrldPrem&gt;Nov. 26 1942&lt;/wrldPrem&gt;
+        &lt;loc&gt;WB studios, Burbank, CA&lt;/loc&gt;
+        &lt;loc&gt;Van Nuys Airport, LA&lt;/loc&gt;
+        &lt;producer&gt;Hal B. Wallis&lt;/producer&gt;
+        &lt;producer&gt;Warner Bros&lt;/producer&gt;
+        &lt;writer&gt;Howard Koch&lt;/writer&gt;
+        &lt;writer&gt;Julius J. Epstein&lt;/writer&gt;
+        &lt;writer&gt;Philip G. Epstein&lt;/writer&gt;
+        &lt;basedOn&gt;Everybody Comes to Rick’s (stage play); written by Murray Burnett and Joan
+            Alison&lt;/basedOn&gt;
+        &lt;composer&gt;Max Steiner&lt;/composer&gt;
+        &lt;starring&gt;Humphrey Bogart&lt;/starring&gt;
+        &lt;starring&gt;Ingrid Bergman&lt;/starring&gt;
+        &lt;starring&gt;Paul Henreid&lt;/starring&gt;
+        &lt;starring&gt;Conrad Veidt&lt;/starring&gt;
+        &lt;starring&gt;Claude Rains&lt;/starring&gt;
+        &lt;cinematography&gt;Arthur Edeson&lt;/cinematography&gt;
+        &lt;editor&gt;Owen Marks&lt;/editor&gt;
+    &lt;/movie&gt;
+    &lt;script&gt;
+        &lt;numScenes&gt;77&lt;/numScenes&gt;
+        &lt;url&gt;https://app.studiobinder.com/company/580e85847e7982164664e844/collab/5eac35a683f7a90bfc3fc810/projects/5de590454f452c09a98e975b/document/5de5904f1fe52b06c2f4bd79/%5Bobject%20Object%5D?utm_source=blog&amp;utm_medium=sb-app-link&amp;utm_campaign=script&amp;utm_term=casablanca-script-breakdown&amp;utm_content=full-script-pdf-download&lt;/url&gt;
+        &lt;generatedBy&gt;Brent Dunham&lt;/generatedBy&gt;
+        &lt;date&gt;Dec. 2&lt;/date&gt;
+        &lt;publisher&gt;StudioBinder Inc.&lt;/publisher&gt;
+        &lt;website&gt; https://www.studiobinder.com/&lt;/website&gt;
+    &lt;/script&gt;
+&lt;/metadata&gt;
+        </pre>
         <h2>Schema</h2>
         <p class = "textBorder"> Our next step was constructing the schema and associating it each xml files. We had to validate it across each file, and adjust some files further accordingly.</p>
 
         <h2>XSLT</h2>
         <p class = "textBorder"> Using our XML documentation, we plucked specific data and tags to create and display tables of information. Our XSLT file accomplishes this by using the @mode attribute set to toc for table of contents and then outputting to an empty html file.. </p>
-        
+        <pre>
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns="http://www.w3.org/1999/xhtml"
+    exclude-result-prefixes="xs math" version="3.0"&gt;
+
+    &lt;xsl:output method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no"
+        indent="yes"/&gt;
+
+
+    &lt;xsl:variable name="casaColl" as="document-node()+" select="collection('xml/?select=*.xml')"/&gt;
+
+
+    &lt;xsl:variable name="speakers" as="xs:string+"
+        select="$casaColl//speaker/@who ! normalize-space() ! upper-case(.) =&gt; distinct-values() =&gt; sort()"/&gt;
+
+
+    &lt;xsl:template match="/"&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;
+                    &lt;xsl:apply-templates select="descendant::title"/&gt;
+                &lt;/title&gt;
+                &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+            &lt;/head&gt;
+
+
+
+            &lt;body class="xslBod"&gt;
+                &lt;!-- NAV BAR--&gt;
+                &lt;div class="navBar"&gt;
+                    &lt;a href="index.html" class="btnFade"&gt;Home&lt;/a&gt;
+                    &lt;a href="script.html" class="btnFade"&gt;Script PDF&lt;/a&gt;
+                    &lt;a href="schema.html" class="btnFade"&gt;Schema&lt;/a&gt;
+                    &lt;a href="methods.html" class="btnFade"&gt;Methods&lt;/a&gt;
+                    &lt;a href="output.html" class="btnFade"&gt;Reading View&lt;/a&gt;
+                    &lt;a href="versions.html" class="btnFade"&gt;Endings&lt;/a&gt;
+                    &lt;a href="https://github.com/jvs7215/Casablanca-Project" class="btnFade"&gt;Github&lt;/a&gt;
+                &lt;/div&gt;
+
+                &lt;h1&gt;
+                    &lt;xsl:apply-templates select="descendant::title"/&gt;
+                &lt;/h1&gt;
+                
+                
+                
+                
+                &lt;!-- Here is a Table of Contents Overview --&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Character Codes&lt;/th&gt;
+                        &lt;th&gt;Character Names&lt;/th&gt;
+                        &lt;th&gt;Count of Appearances&lt;/th&gt;
+                        &lt;th&gt;First scene in which they speak&lt;/th&gt;
+                    &lt;/tr&gt;
+
+                    &lt;xsl:for-each select="$speakers"&gt;
+                        &lt;xsl:variable name="currentSpeaker" as="element()+"
+                            select="$casaColl//speaker[@who ! normalize-space() ! upper-case(.) = current()]"/&gt;
+
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                                &lt;xsl:value-of select="current()"/&gt;
+                            &lt;/td&gt;
+
+
+                            &lt;td&gt;
+
+                                &lt;xsl:value-of
+                                    select="$currentSpeaker ! normalize-space() =&gt; distinct-values()"
+                                /&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;xsl:value-of select="$currentSpeaker =&gt; count()"/&gt;
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                &lt;!-- The first scene in which that character speaks --&gt;
+                                &lt;xsl:variable name="firstSceneNumber" as="xs:double" select="
+                                        ($casaColl//scene[descendant::speaker/@who !
+                                        normalize-space() ! upper-case(.) = current()]/@n ! number(.)) =&gt; min()"/&gt;
+
+                                &lt;a href="#scene-{$firstSceneNumber}"&gt;
+
+                                    &lt;xsl:text&gt;Scene &lt;/xsl:text&gt;
+                                    &lt;xsl:value-of select="$firstSceneNumber"/&gt;
+                                &lt;/a&gt;
+
+
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/xsl:for-each&gt;
+
+                &lt;/table&gt;
+                
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;h2&gt;Locations&lt;/h2&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;h2&gt;Number of Appearances&lt;/h2&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;h2&gt;First Scene Appearance&lt;/h2&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Rick's Café&lt;/td&gt;
+                        &lt;td&gt;39&lt;/td&gt;
+                        &lt;td&gt;Scene 12&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Police Station&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Old Moorish Section of the City&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;A Street in the Old Moorish Section&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 3&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Palais De Justice&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;Scene 4&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Sidewalk Café&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 5&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Airfield&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 11&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Rick's Paris Apartment&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 25&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Paris Café&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;Scene 26&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Ilsa's Paris Apartment&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 27&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;La Belle Aurore&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 30&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Gare De Lyon&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 31&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Renault's Office&lt;/td&gt;
+                        &lt;td&gt;4&lt;/td&gt;
+                        &lt;td&gt;Scene 35&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Prefecture Lobby&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 36&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;The Blue Parrot&lt;/td&gt;
+                        &lt;td&gt;5&lt;/td&gt;
+                        &lt;td&gt;Scene 39&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Black Market&lt;/td&gt;
+                        &lt;td&gt;3&lt;/td&gt;
+                        &lt;td&gt;Scene 38&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Hotel Hallway&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 54&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Hotel Room&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 55&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;German Consulate&lt;/td&gt;
+                        &lt;td&gt;1&lt;/td&gt;
+                        &lt;td&gt;Scene 73&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Airport&lt;/td&gt;
+                        &lt;td&gt;4&lt;/td&gt;
+                        &lt;td&gt;Scene 74&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Airport Hangar&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;Scene 75&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+
+                &lt;!-- BELOW is the Reading View processing --&gt;
+                
+                
+                &lt;section class="reading"&gt;
+                    &lt;xsl:apply-templates select="$casaColl//scene"/&gt;
+                &lt;/section&gt;
+
+            &lt;/body&gt;
+            &lt;div class="footer"&gt;
+                &lt;!--creative commons license--&gt;
+                &lt;p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"
+                        &gt;&lt;a property="dct:title" rel="cc:attributionURL"
+                        href="https://jvs7215.github.io/Casablanca-Project/"&gt;Casablanca Project&lt;/a&gt;
+                    by &lt;span property="cc:attributionName"&gt;&lt;a href="https://github.com/jvs7215"
+                            target="_blank" rel="noopener noreferrer"&gt;Jessica Salemme&lt;/a&gt;, &lt;a
+                            href="https://github.com/sjm7342" target="_blank"
+                            rel="noopener noreferrer"&gt;Sean Martin&lt;/a&gt;, &lt;a
+                            href="https://github.com/Cal16king" target="_blank"
+                            rel="noopener noreferrer"&gt;Caleb King&lt;/a&gt;&lt;/span&gt; is licensed under &lt;a
+                        href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
+                        target="_blank" rel="license noopener noreferrer"
+                        style="display:inline-block;"&gt;CC BY-NC 4.0&lt;img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                            alt=""/&gt;&lt;img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                            alt=""/&gt;&lt;img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                            alt=""/&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/html&gt;
+    &lt;/xsl:template&gt;
+
+
+    &lt;!-- BELOW HERE are the Reading View templates --&gt;
+    &lt;xsl:template match="scene"&gt;
+        &lt;section id="scene-{@n}" class="scene sceneMargin"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/section&gt;
+    &lt;/xsl:template&gt;
+    
+    &lt;xsl:template match="camera"&gt;
+        &lt;div class="camera"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/div&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;xsl:template match="setting"&gt;
+        &lt;div class="setting"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/div&gt;
+    &lt;/xsl:template&gt;
+    &lt;xsl:template match="sp"&gt;
+        &lt;xsl:apply-templates/&gt;
+    &lt;/xsl:template&gt;
+    &lt;xsl:template match="speaker"&gt;
+        &lt;span class="speaker {@who}"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/span&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;xsl:template match="diag"&gt;
+        &lt;span class="diag"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/span&gt;
+    &lt;/xsl:template&gt;
+
+    &lt;!-- ebb: added one more for directions / descriptions --&gt;
+    &lt;xsl:template match="sp/descr | dir"&gt;
+        &lt;span class="dir"&gt;
+            &lt;xsl:apply-templates/&gt;
+        &lt;/span&gt;
+    &lt;/xsl:template&gt;
+
+
+&lt;/xsl:stylesheet&gt;
+
+        </pre>
         <h2>HTML</h2>
         <p class = "textBorder"> As you can see form our website, our use of html helped us create and launch a website with the help of Github Pages. Each site page was fabricated stylized by our project team to recreate a similar thematic to our script. We hope you enjoy looking around! </p>
-        
+        <p class="textBorder">Our schema is located on a different page. You can locate an image<a href="file:///C:/Users/cal16/Github/Casablanca-Project/docs/schema.html">Here</a></p>
 
 
         <!--FOOTER-->

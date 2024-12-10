@@ -242,7 +242,18 @@ span.diag {
     white-space: pre;
 }
 
-
+pre {
+    display: flex;
+    border: solid;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #ebc3ab; /*soft white*/
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
+    border-color: #854c1d;
+    /*top right bottom left*/
+    padding: 15px 25px 25px 25px;
+}
 span.dir {
     display: inline;
     font-style: italic;
