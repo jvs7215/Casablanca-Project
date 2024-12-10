@@ -13,6 +13,7 @@ body {
     color: #383b33; /*dark/grey black*/
     /*gets rid of default margin!*/
     margin: 0;
+
 }
 
 
@@ -30,8 +31,8 @@ div.navBar {
 /*readding default margin*/
 .spacing {
     margin: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
 
 
 }
@@ -90,8 +91,8 @@ h1 {
 /*adds border around h2s*/
 h2 {
     margin: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     border: solid;
     border-radius: 12px;
     display: inline;
@@ -105,8 +106,8 @@ h2 {
 /*adds a border around p elements*/
 .textBorder {
     margin: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     border: solid;
     border-radius: 12px;
     padding: 8px;
@@ -119,26 +120,20 @@ h2 {
 
 
 
-.header {
-
-}
-
-.imgFormat {
-}
-
 /*make buttons change on hover*/
 .btnFade {
-    background-color: #913d04;
+background-color: rgba(145, 65, 4,  1);  /*full rust*/
+
     margin: 0;
     color: white;
     padding: 16px 32px;
     text-align: center;
-    /*  opacity: 0.6;
-  transition: 0.3s;*/
+    /*  opacity: 0.6;*/
+  transition: 0.35s;
 }
 
 .btnFade:hover {
-    background-color: #fff8f0; /*soft white*/
+background-color: rgba(145, 65, 4,  0);  /*0 rust*/
     color: #383b33; /*dark/grey black*/
 }
 
@@ -148,6 +143,7 @@ h2 {
     background-color: #e05d4f; /*red*/
     color: white;
     font-weight: bold;
+    margin-top: 40px;
     /*space around text*/
     padding-top: 15px;
     padding-bottom: 15px;
@@ -158,6 +154,14 @@ h2 {
 
 /*XSL/Reading View styling*/
 
+.reading
+{
+    margin: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
 
 table {
     margin: 40px;
@@ -167,11 +171,12 @@ table {
     border-radius: 12px;
     padding: 8px;
     background-color: #fff8f0; /*soft white*/
-    ; /* offset-x | offset-y | blur-radius | color */
+    /* offset-x | offset-y | blur-radius | color */
     box-shadow: 7px 5px 1px #e05d4f; /*red*/
     border-color: #854c1d;
     justify-content: center;
     display: flex;
+
 }
 
 
@@ -186,22 +191,82 @@ th {
     box-shadow: 7px 5px 1px #e05d4f; /*red*/
 }
 
-
-div.camera {
-    margin: 20px;
+section.scene {
     border: solid;
     border-radius: 12px;
     padding: 8px;
-    background-color: #e3b381;
+    background-color: #fff8f0; /*soft white*/
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 10px 5px 5px brown;
-    border-color: #cf7940;
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
+    border-color: #854c1d;
+    /*top right bottom left*/
+    padding: 15px 25px 25px 25px;
+}
+
+section.sceneMargin 
+{
+margin-top: 20px;
+margin-bottom: 20px;    
+}
+
+
+
+div.camera {
+    margin-left: 50px;
+    padding: 18px;
+    font-weight: bold;
+
+}
+
+div.setting {
+    color: #0268ba; /*blue*/
+}
+
+span.speaker {
+    color: red;
+    font-weight: bold;
+    display: inline;
+}
+/*new line*/
+.speaker:before {
+    content:"\a";
+    white-space: pre;
 }
 
 span.diag {
-    color: red;
+    display: inline;
 }
+/*new line*/
+.diag:after {
+    content:"\a";
+    white-space: pre;
+}
+
+
+span.dir {
+    display: inline;
+    font-style: italic;
+    color: #02ba77; /*green*/
+}
+/*new line*/
+.dir:before {
+    content:"\a";
+    white-space: pre;
+}
+.dir:after {
+    content:"\a";
+    white-space: pre;
+}
+
+
+
 /* XSL: Versioning styling */
+
+.versions {
+    color: #383b33  !important; /*dark/grey black*/
+
+}
+
 div.intro {
     width: 95%;
     margin: auto;
@@ -218,22 +283,24 @@ div.flex {
 }
 
 div.everybody-play {
-    background-color: silver;
+    background-color: #D8D8D8; /*grey*/
     padding: 2em;
     flex: 1;
+    
 }
 div.alt-77 {
-    background-color: Bisque;
+    background-color: #F8C8DC; /*pink*/
     padding: 2em;
     flex: 1;
 }
 div.screenplay {
-    background-color: #ffda90;
+    background-color: #ffda90; /*yellow*/
     padding: 2em;
     flex: 1;
 }
 div.united {
-    background-color: Bisque;
+/*pink to yellow*/
+    background-image: linear-gradient(to right, #F8C8DC , #ffda90);
     padding: 4em;
     flex: 2;
 }
@@ -244,8 +311,7 @@ div.intro div h2 {
     display: block;
     margin-bottom: 1em;
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 10px 5px 5px tan;
-
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
 }
 
 p {

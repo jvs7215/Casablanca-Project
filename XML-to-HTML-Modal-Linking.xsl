@@ -23,26 +23,30 @@
                 </title>
                 <link rel="stylesheet" type="text/css" href="style.css"/>
             </head>
-            
-            
-            
-            <body>
+
+
+
+            <body class="xslBod">
                 <!-- NAV BAR-->
                 <div class="navBar">
-                    <a href="index.html" class="btnFade">Home</a><a href="script.html" class="btnFade"
-                        >Script PDF</a><a href="schema.html" class="btnFade">Schema</a><a
-                            href="methods.html" class="btnFade">Methods</a><a
-                                href="output.html" class="btnFade">Reading View</a>
-                    <a href="versions.html" class="btnFade"
-                        >Endings</a>
+                    <a href="index.html" class="btnFade">Home</a>
+                    <a href="script.html" class="btnFade">Script PDF</a>
+                    <a href="schema.html" class="btnFade">Schema</a>
+                    <a href="methods.html" class="btnFade">Methods</a>
+                    <a href="output.html" class="btnFade">Reading View</a>
+                    <a href="versions.html" class="btnFade">Endings</a>
                     <!-- 2024-12-08 ebb: I'm adding one more button for viewing the three different 
                     script endings! If you want to include this a different way, feel free to change it!
                     -->
                 </div>
-                
+
                 <h1>
                     <xsl:apply-templates select="descendant::title"/>
                 </h1>
+                
+                
+                
+                
                 <!-- Here is a Table of Contents Overview -->
                 <table>
                     <tr>
@@ -91,32 +95,63 @@
                 </table>
 
                 <!-- BELOW is the Reading View processing -->
-
+                
+                
                 <section class="reading">
                     <xsl:apply-templates select="$casaColl//scene"/>
                 </section>
 
             </body>
-
+            <div class="footer">
+                <!--creative commons license-->
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"
+                        ><a property="dct:title" rel="cc:attributionURL"
+                        href="https://jvs7215.github.io/Casablanca-Project/">Casablanca Project</a>
+                    by <span property="cc:attributionName"><a href="https://github.com/jvs7215"
+                            target="_blank" rel="noopener noreferrer">Jessica Salemme</a>, <a
+                            href="https://github.com/sjm7342" target="_blank"
+                            rel="noopener noreferrer">Sean Martin</a>, <a
+                            href="https://github.com/Cal16king" target="_blank"
+                            rel="noopener noreferrer">Caleb King</a></span> is licensed under <a
+                        href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
+                        target="_blank" rel="license noopener noreferrer"
+                        style="display:inline-block;">CC BY-NC 4.0<img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                            alt=""/><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                            alt=""/><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                            alt=""/></a></p>
+            </div>
         </html>
     </xsl:template>
 
 
     <!-- BELOW HERE are the Reading View templates -->
     <xsl:template match="scene">
-        <section id="scene-{@n}">
+        <section id="scene-{@n}" class="scene sceneMargin">
             <xsl:apply-templates/>
         </section>
     </xsl:template>
 
-<!--scene formating testing--> 
+
+
+
+
+
+    <!--scene formating testing-->
     <!-- ebb: this one is conflicting with previous template matching on scenes. -->
- <!--   <xsl:template match="scene">
+    <!--   <xsl:template match="sceSne">
         <div class="camera">
             <xsl:apply-templates/>
         </div>
     </xsl:template>-->
-    
+
+
+
     <xsl:template match="camera">
         <div class="camera">
             <xsl:apply-templates/>
