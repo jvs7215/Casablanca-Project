@@ -41,6 +41,7 @@ div.navBar {
     margin-top: 100px;
 }
 
+/* box and container styling */
 .box {
     background-color: rgba(255, 255, 255, 0.7); /* semi transparent colored border for aesthetic */
     padding: 10px;
@@ -69,12 +70,31 @@ bgImg {
     background-size: cover;
 }
 
+.code-box {
+display: flex;
+    
+    margin: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 4px solid #807EBF;
+    height: 300px;
+    overflow: auto;
+    
+    background-color: #ebc3ab; /*soft white*/
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 7px 5px 1px #e05d4f; /*red*/
+    border-color: #854c1d;
+    /*top right bottom left*/
+    padding: 15px 25px 25px 0px;
+    font-size: 16px;
+}
+
+/* pdf format styling */
 .pdf-embed {
     width: 80%;
     height: 80%;
-}
-
-.p {
 }
 
 /*header formating
@@ -179,8 +199,11 @@ table {
 
 }
 
-
+tr {
+    
+}
 th {
+    
     margin-right: 70px;
     border: solid;
     border-radius: 12px;
@@ -189,6 +212,14 @@ th {
     ;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 7px 5px 1px #e05d4f; /*red*/
+    margin-bottom: 10px;
+}
+td {
+    display flex;
+    border: 2px solid;
+    padding: 5px;
+    text-align:center;
+    margin: 0px;
 }
 
 section.scene {
@@ -242,18 +273,7 @@ span.diag {
     white-space: pre;
 }
 
-pre {
-    display: flex;
-    border: solid;
-    border-radius: 12px;
-    padding: 8px;
-    background-color: #ebc3ab; /*soft white*/
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 7px 5px 1px #e05d4f; /*red*/
-    border-color: #854c1d;
-    /*top right bottom left*/
-    padding: 15px 25px 25px 25px;
-}
+
 span.dir {
     display: inline;
     font-style: italic;
