@@ -292,6 +292,12 @@
         </span>
     </xsl:template>
 
+    <xsl:template match="descr">
+        <span class="descr">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
     <!-- ebb: added one more for directions / descriptions -->
     <xsl:template match="sp/descr | dir">
         <span class="dir">

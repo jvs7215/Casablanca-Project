@@ -353,3 +353,8 @@ span.dir {
     font-style: italic;
     padding-right: 1em;
 }
+
+span.descr {
+    color: purple;
+    text-decoration-line: underline;
+}
