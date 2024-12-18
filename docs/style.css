@@ -234,6 +234,10 @@ td {
     margin: 0px;
 }
 
+table.metadata {
+
+}
+
 section.scene {
     border: solid;
     border-radius: 12px;
