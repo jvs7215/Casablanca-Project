@@ -35,7 +35,7 @@
                     <a href="methods.html" class="btnFade">Methods</a>
                     <a href="output.html" class="btnFade">Reading View</a>
                     <a href="versions.html" class="btnFade">Endings</a>
-                    <a href="https://github.com/jvs7215/Casablanca-Project" class="btnFade">Github</a>
+                    <a href="https://github.com/jvs7215/Casablanca-Project" class="btnFade" target="_blank" rel="noopener noreferrer">Github</a>
                     <!-- 2024-12-08 ebb: I'm adding one more button for viewing the three different 
                     script endings! If you want to include this a different way, feel free to change it!
                     -->
@@ -292,7 +292,7 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="descr">
+    <xsl:template match="descr | sp/diag/descr">
         <span class="descr">
             <xsl:apply-templates/>
         </span>

@@ -57,6 +57,7 @@ div.navBar {
     margin-left: auto;
     margin-right: auto;
     height: 80vh;
+    margin-bottom: 70px;
 }
 
 .container {
@@ -118,9 +119,20 @@ h2 {
     display: inline;
     padding: 8px;
     background-color: #fff8f0; /*soft white*/
-    ;
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 7px 5px 1px #e05d4f; /*red*/
+}
+
+h3 {
+    margin: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+        font-size: 1.25em;
+   border-bottom: solid;
+    padding: 8px;
+    border-width: 5px;
+    /* offset-x | offset-y | blur-radius | color */
+    border-color: #e05d4f; /*red*/
 }
 
 /*adds a border around p elements*/
