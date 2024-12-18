@@ -47,7 +47,18 @@
                 </h1>
 
 
-
+                <!--JAS TEST TOC-->
+                <div class="toc">
+                    <h3>Scenes</h3>
+                    <div>
+                        <xsl:for-each select="$casaColl//scene">
+                            <xsl:variable name="sceneNumber" select="position()"/><a
+                                href="#scene-{$sceneNumber}">[<xsl:value-of select="$sceneNumber"
+                                />]</a>
+                        </xsl:for-each>
+                    </div>
+                </div>
+                <!--JAS TEST TOC END-->
 
                 <!-- Here is a Table of Contents Overview -->
                 <table>

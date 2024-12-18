@@ -211,9 +211,7 @@ table {
 
 }
 
-tr {
-    
-}
+
 th {
     
     margin-right: 70px;
@@ -234,8 +232,18 @@ td {
     margin: 0px;
 }
 
-table.metadata {
-
+div.toc {
+    margin: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: solid;
+    border-radius: 12px;
+        /*top right bottom left*/
+    padding: 10px 45px 25px 45px;
+    background-color: #fff8f0; /*soft white*/
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 8px 5px 1px #e05d4f; /*red*/
+    border-color: #854c1d;
 }
 
 section.scene {

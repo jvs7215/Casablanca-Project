@@ -298,7 +298,7 @@
                 away from the plane, Heinze following, with Casselle and Tonelli bringing up the
                 rear, engaged in a heated exchange of words. </dir>
             <sp>
-                <speaker who="Renault">RENAULT</speaker>
+                <speaker who="ren">RENAULT</speaker>
                 <diag> You may find the climate of Casablanca a trifle warm, Major. </diag>
             </sp>
             <sp>
@@ -521,7 +521,7 @@
                 <diag> What! Do you know who I am? </diag>
             </sp>
             <sp>
-                <speaker who="Ric">RICK</speaker>
+                <speaker who="rick">RICK</speaker>
                 <diag> I do. You're lucky the bar's open to you. </diag>
             </sp>
             <sp>
