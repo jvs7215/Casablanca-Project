@@ -23,9 +23,13 @@
         <header><h1>Methods</h1></header>
         
         <h2>XML Documentation</h2>
-        <p class = "textBorder">With the help of Dr. B, we used regular expressions in search + replace operations over the XML Casablanca script to establish the main structure of our XML. We were able to isolate most scene, camera, sp, speaker, and diag elements using that method. Our next step was splitting the xml into three portions for each member to finish documenting. We split it up by approximate lines, to the closest scene. Once split, we individually used search + replace to add in "who=" attributes within the speaker elements. We had to manually move and tag instances of physical acting cues (dir elements) and tag emotional acting dues(descr elements).</p>
+        <p class = "textBorder">With the help of Dr. B, we used regular expressions in search + replace operations over the XML Casablanca script to establish the main structure of our XML. 
+            In order to complete this as efficiently as possible, we splitting the xml into three portions by number of scenes for each member to finish documenting. 
+            Once split, we individually used search + replace to add in "who=" attributes within the speaker elements. 
+            We had to manually move and tag instances of physical acting cues (dir elements) and tag emotional acting dues(descr elements).</p>
         
-        <p class = "textBorder"> There were some inconsistencies between the files that we had to quality check and adjust. For example, there were instances of montages within the middle section of the script that didn't exist in the other files. </p>
+        <p class = "textBorder"> Note: There were some inconsistencies between the files that we had to quality check and adjust. 
+            For example, there were instances of montages within the middle section of the script that didn't exist in the other files. </p>
         <pre class="code-box">
             &lt;body&gt;
     &lt;scene n="0"&gt;
@@ -52,7 +56,8 @@
     &lt;/scene&gt;
         </pre>
         <h2>Metadata</h2>
-        <p class = "textBorder">After we finished documenting the script, we added in the metadata and included a section for the movie metadata, and one for the script metadata. For both sections we included various aspects, such as the different people and locations involved for the movie metadata, and the script scenes and publishers for the script metadata.</p>
+        <p class = "textBorder">After we finished documenting the script, we added in the metadata and included a section for the movie metadata, and one for the script metadata. 
+            For both sections we included various aspects, such as the different people and locations involved for the movie metadata, and the script scenes and publishers for the script metadata.</p>
         <pre class="code-box">
             &lt;metadata&gt;
     &lt;movie&gt;
@@ -86,12 +91,19 @@
         &lt;website&gt; https://www.studiobinder.com/&lt;/website&gt;
     &lt;/script&gt;
 &lt;/metadata&gt;
+        
         </pre>
         <h2>Schema</h2>
-        <p class = "textBorder"> Our next step was constructing the schema and associating it each xml files. We had to validate it across each file, and adjust some files further accordingly.</p>
+        <p class = "textBorder"> Our next step was constructing the schema and associating it each xml files. 
+            We had to validate it across each file, and adjust some files further accordingly.</p>
 
         <h2>XSLT</h2>
-        <p  class = "textBorder"> Using our XML documentation, we plucked specific data and tags to create and display tables of information. Our XSLT file accomplishes this by using the @mode attribute set to toc for table of contents and then outputting to an empty html file.. </p>
+        <p  class = "textBorder"> Using our XML documentation, we plucked specific data and tags to create and display tables of information. 
+            Our XSLT file accomplishes this by using the @mode attribute set to toc for table of contents and then outputting to an empty html file. 
+            
+            The functioning tables can be found in the reading view page linked <a href="output.html"><b>here</b></a>.
+        </p>
+        
         <pre class="code-box">
             &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -381,7 +393,9 @@
 
         </pre>
         <h2>HTML</h2>
-        <p class = "textBorder"> As you can see form our website, our use of html helped us create and launch a website with the help of Github Pages. Each site page was fabricated stylized by our project team to recreate a similar thematic to our script. We hope you enjoy looking around! </p>
+        <p class = "textBorder"> As you can see form our website, our use of html helped us create and launch a website with the help of Github Pages. 
+            Each site page was fabricated and stylized by our project team to recreate a similar thematic to our script. 
+            We hope you enjoy looking around! </p>
         <p class="textBorder">Our schema is located on a different page. You can locate the image <a href="file:///C:/Users/cal16/Github/Casablanca-Project/docs/schema.html">Here</a></p>
 
 
